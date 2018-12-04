@@ -1,0 +1,18 @@
+body {
+
+
+    /*background: url("../images/homePage/background1.jpg") no-repeat center center fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+
+
+
+}
+
+.well {
+    background-color: rgba(246, 245, 245, 0.9);
+    border-radius: 25px;
+}
