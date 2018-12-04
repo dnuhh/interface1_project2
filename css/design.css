@@ -75,6 +75,7 @@ h4, h5{
 .separate{
     margin: 0 0 0 10px;
 }
+.unavailable{}
 .unavailable:hover{
     text-align: right;
     
