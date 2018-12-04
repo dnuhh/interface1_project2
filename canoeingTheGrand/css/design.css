@@ -1,0 +1,40 @@
+.videoWrapper{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+}
+.grid-3-col
+{   
+    text-align: center;
+    width: 80%;
+    margin: 0px auto 80px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 2vw;
+}
+.grid-3-col h2 {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+.icon img{
+width: 100px;
+height: 100px;
+}
+
+/*for cellphones*/
+@media only screen and (max-width: 480px) 
+    {
+        .grid-3-col
+        {
+        grid-template-columns: 1fr;
+        }
+    }
