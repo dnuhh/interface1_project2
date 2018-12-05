@@ -1792,7 +1792,6 @@ pre code {
 
 .table thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid #dee2e6
 }
 
 .table tbody + tbody {
@@ -1974,8 +1973,9 @@ pre code {
 
 .table .thead-dark th {
     color: #fff;
-    background-color: #212529;
-    border-color: #32383e
+    background-color:#495057;
+    border-color: #666;
+   
 }
 
 .table .thead-light th {
@@ -6479,8 +6479,6 @@ button.close {
     right: 15%;
     bottom: 20px;
     left: 15%;
-    z-index: 10;
-    padding-top: 20px;
     padding-bottom: 20px;
     color: #fff;
     text-align: center
