@@ -1,19 +1,25 @@
-.videoWrapper{
+.rates {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.videoWrapper {
     position: relative;
     padding-bottom: 56.25%;
     padding-top: 25px;
     height: 0;
 }
-.videoWrapper iframe
-{
+
+.videoWrapper iframe {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100vw;
     height: auto;
 }
-.grid-3-col
-{   
+
+.grid-3-col {
     text-align: center;
     width: 80%;
     margin: 0px auto 80px;
@@ -21,20 +27,190 @@
     grid-template-columns: repeat(3, auto);
     grid-gap: 2vw;
 }
+
 .grid-3-col h2 {
-  font-size: 1em;
-  text-transform: uppercase;
+    font-size: 1em;
+    text-transform: uppercase;
 }
-.icon img{
-width: 100px;
-height: 100px;
+
+.icon img {
+    width: 100px;
+    height: 100px;
+}
+
+i {
+    display: block;
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    transition: all, 0.3s;
+}
+
+i:hover {
+    opacity: 0.5;
+}
+
+.emploee-wrapper {
+    margin: 0 auto;
+}
+
+#price-table {
+    margin-top: 80px;
+    align-content: center;
+}
+
+.table-images {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.grid-2-col-rates {
+    height: 500px;
+    float: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.grid-2-col-rates .item {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    grid-row-end: span 2;
+    background-color: antiquewhite;
+}
+
+#pic1 {
+    background-image: url(../images/vanveenjf-1127017-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#pic2 {
+    background-image: url(../images/kimon-maritz-234741-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#pic3 {
+    background-image: url(../images/willian-justen-de-vasconcellos-443310-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#pic4 {
+    background-image: url(../images/willian-justen-de-vasconcellos-443310-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#pic5 {
+    background-image: url(../images/willian-justen-de-vasconcellos-443310-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#pic6 {
+    background-image: url(../images/willian-justen-de-vasconcellos-443310-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#pic7 {
+    background-image: url(../images/willian-justen-de-vasconcellos-443310-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.name {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    opacity: 0;
+    transition: 0.75s;
+}
+
+.name1 {
+    padding-top: 10px;
+    padding-bottom: 305px;
+    opacity: 0;
+    transition: 0.75s;
+}
+
+.name2 {
+    padding-top: 10px;
+    padding-bottom: 135px;
+    opacity: 0;
+    transition: 0.75s;
+}
+
+.name1:hover,
+.name2:hover,
+.name:hover {
+    color: white;
+    background-image: linear-gradient(to bottom, #40454f, rgba(255, 0, 0, 0));
+    opacity: 1;
+}
+
+.grid-2-col-rates .item-span {
+    width: 100%;
+    height: 100%;
+    grid-column-end: span 2;
+    background-image: url(../images/tim-mossholder-1074115-unsplash.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.grid-5-row-rates {
+    width: 100%;
+    height: 500px;
+    float: right;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: ifr (repeat, 5);
+}
+
+.grid-5-row-rates .section {
+    width: 100%;
+    height: 100%;
+    background-color: #999;
+    text-align: center;
 }
 
 /*for cellphones*/
-@media only screen and (max-width: 480px) 
-    {
-        .grid-3-col
-        {
-        grid-template-columns: 1fr;
-        }
+@media only screen and (max-width: 480px) {
+   
+
+    .table-images {
+
+        font-size: 0.4em;
+
     }
+     .grid-3-col {
+        grid-template-columns: 1fr;
+    }
+
+
+}
+
+@media only screen and (max-width: 987.98px) {
+    .carousel-inner i {
+        display: none;
+    }
+
+    .grid-3-col .column p {
+        font-size: 13px;
+    }
+}
+
+
+@media only screen and (max-width: 850px) {
+    .table-images {
+
+        font-size: 0.7em;
+
+    }
+    
+}
