@@ -1,0 +1,84 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6em;
+    font-family: 'Open Sans', sans-serif;
+}
+.info{
+    margin: 0 10%;
+    padding: 80px 0;
+    height: auto;
+}
+.tripDetails{
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.boatDetails{
+
+}
+.boatDetails .cell{
+    height: auto;
+}
+.grid-15-col{
+    display: grid;
+    grid-template-columns: repeat(15,1fr);
+    grid-gap: 15px 7px;
+    margin: 0;
+    height: auto;
+
+}
+h3{
+    margin: 0;
+    padding: 0;
+}
+h4, h5{
+    margin: 0;
+    padding: 0;
+}
+.header5{
+    grid-column-end: span 15;
+}
+.header3{
+    grid-column-end: span 10;
+}
+.header1{
+    grid-column-end: span 5;
+}
+.five{
+    height: 200px;
+    grid-column-end: span 3;
+}
+.cell{
+    padding: 10px;
+    background: rgb(220,220,220);
+    transition: all 0.8s;
+}
+.cell .indivTripInfo{
+    display: none;
+    margin: 0;
+}
+.cell .tripName{
+    margin: 0;
+}
+.cell:hover .indivTripInfo{
+    display: block;
+}
+.cell:hover .disappear{
+    display: none;
+}
+.three{
+    height: 150px;
+    grid-column-end: span 5;
+}
+.separate{
+    margin: 0 0 0 10px;
+}
+.unavailable{
+    //color: red;
+    opacity: 0.5;
+}
+.unavailable:hover{
+    
+}
