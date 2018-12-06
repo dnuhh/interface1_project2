@@ -3,32 +3,39 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="stylesheet" href="css/design.css">
+    <link rel="stylesheet" href="../css/design_reserve.css">
+    <link rel="stylesheet" href="css/navigation.css">
     <link href="css/bootstrap.css" rel="stylesheet">
-    
+    <link href="css/alertify.min.css" rel="stylesheet">
+
     <title>School Reservations</title>
 </head>
 
 <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 fixed-top">
-        <a href="../index.html" class="navbar-brand"><img src="../interface1_project2/images/homePage/ctgLogo.jpg" width="120px" height="30px"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a></li>
-                <li class="nav-item active"><a class="nav-link" href="tripInformation.html">Trip Info</a></li>
-                <li class="nav-item"><a class="nav-link" href="rates.html"> Rates</a></li>
-                <li class="nav-item"><a class="nav-link" href="reservation.html">Reserve</a></li>
-                <li class="nav-item"><a class="nav-link" href="groupInformation.html">More Info</a></li>
-        
-            </ul>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 fixed-top">
+            <a href="../index.html" class="navbar-brand"><img src="../images/homePage/ctgLogo.jpg" width="120px" height="30px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="tripInformation.html">Trip Info</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rates.html"> Rates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reservation.html">Reserve</a></li>
+                     <li class="nav-item"><a class="nav-link" href="reservation_group.html">Reserve Group</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reservation_school.html">Reserve School</a></li>
+                    <li class="nav-item"><a class="nav-link" href="groupInformation.html">More Info</a></li>
 
+                </ul>
+            </div>
+        </nav>
+    </header>
     <div class="header">
         <h1>School Reservation</h1>
         <p>If your school board is listed below, please click the name of your board, fill out the certificate.
@@ -39,22 +46,22 @@
 
     <h3>School Waiver Forms</h3>
     <div class="grid-6-col">
-        <div class="pdf"><a href="#"><i class="far fa-file-pdf"></i></a><br>
+        <div class="pdf"><a href="http://getonthegrand.com/images/schoolGroupInformation/certificateHalton.pdf"><i class="far fa-file-pdf"></i></a><br>
             <p>Halton District<br> School Board</p>
         </div>
-        <div class="pdf"><a href="#"><i class="far fa-file-pdf"></i></a><br>
+        <div class="pdf"><a href="http://getonthegrand.com/images/schoolGroupInformation/certificateUpperGrand.pdf"><i class="far fa-file-pdf"></i></a><br>
             <p>Upper Grand District <br>School Board</p>
         </div>
-        <div class="pdf"><a href="#"><i class="far fa-file-pdf"></i></a><br>
+        <div class="pdf"><a href="http://getonthegrand.com/images/schoolGroupInformation/certificate-WaterlooCatholic.pdf"><i class="far fa-file-pdf"></i></a><br>
             <p>Waterloo Catholic District <br> School Board</p>
         </div>
-        <div class="pdf"><a href="#"><i class="far fa-file-pdf"></i></a><br>
+        <div class="pdf"><a href="http://getonthegrand.com/images/schoolGroupInformation/certificateWaterlooDistrict.pdf"><i class="far fa-file-pdf"></i></a><br>
             <p>Waterloo Region District<br> School Board</p>
         </div>
-        <div class="pdf"><a href="#"><i class="far fa-file-pdf"></i></a><br>
+        <div class="pdf"><a href="http://getonthegrand.com/images/schoolGroupInformation/certificateWellingtonCatholic.pdf"><i class="far fa-file-pdf"></i></a><br>
             <p>Wellington Catholic District<br> School Board</p>
         </div>
-        <div class="pdf"><a href="#"><i class="far fa-file-pdf"></i></a><br>
+        <div class="pdf"><a href="http://getonthegrand.com/images/schoolGroupInformation/waiverSchool.pdf"><i class="far fa-file-pdf"></i></a><br>
             <p>Individual Waiver Form</p>
         </div>
     </div>
@@ -67,7 +74,7 @@
 
     <div class="reservationFields">
         <div class="header1">
-            <h1>Please fill in the following fields</h1>
+            <h2>Please fill in the following fields</h2>
             <div class="grid-4-col">
                 <div class="cell1">
                     <form>
@@ -187,6 +194,7 @@
 
                 <div class="cell3">
                     <h3>Select Time</h3>
+                    <div class="time">
                     <select>
                         <option value="eightam">8:00 AM</option>
                         <option value="nineam">9:00 AM</option>
@@ -202,6 +210,7 @@
                         <option value="tenam">10:00 AM</option>
                         <option value="elevenam">11:00 AM</option>
                     </select>
+                    </div>
                     <br>
                     <p>If you would like to book a trip for today, please
                         give us a call at (519) 896-0290 or email us, as our
@@ -209,13 +218,15 @@
                         !</p>
                 </div>
 
-
-                <div class="cell5">
-                    Question, Comments, or Concerns?
-                    <textarea rows="4" cols="50" name="comment" form="usrform" placeholder="Question, Comments, or Concerns..."> </textarea>
-                </div>
+                
+                
+            
+            <div class="cell5">
+                Question, Comments, or Concerns?
+                <textarea rows="4" cols="50" name="comment" form="usrform" placeholder="Question, Comments, or Concerns..."> </textarea>
+            </div>
                 <div class="cell6">
-                    <input type="submit" value="Submit">
+                 <input type="submit" value="Submit">
                 </div>
             </div>
         </div>
@@ -225,20 +236,42 @@
 
 
     <div class="footer">
-        <div class="info">
-            <a href="contact.html">Contact Us</a>
+        <div class="item1">
+            <i class="fas fa-map-marker-alt"></i>Located at the Freeport Bridge 3734 King Street East. Kitchener, Ontario N2P 2G5
+        </div>
+        <div class="item2">
+            <i class="fas fa-phone"></i>(519) 896-0290 / 1-877-896-0290
+        </div>
+        <div class="item3">
+            <i class="fas fa-envelope"></i><a href="contact.html">Contact Us!</a>
+        </div>
+        <div class="item4"> <b>About the company</b>
+            <p>Here is some random shit about the company we can make up maybe? I don't know I'm just trying to make this pretty I don't know what I'm doing I'm just doing my best please send help.</p>
+            <a href="https://www.instagram.com/canoethegrand/"><i class="fab fa-instagram"></i>Check out our instagram!</a>
             <br>
-            <a href="employee.html">Employee SignIn</a>
+            <div class="item5">
+
+                <a href="employee.html"><i class="fas fa-sign-out-alt"></i>Employee SignIn</a>
+            </div>
         </div>
     </div>
 
 
-
- <!-- Bootstrap core JavaScript
+    <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.js"></script>
 </body>
-<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'a2plcpnl0893'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script></html>
+<script>
+    'undefined' === typeof _trfq || (window._trfq = []);
+    'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({
+        'tccl.baseHost': 'secureserver.net'
+    }), _trfd.push({
+        'ap': 'cpsh'
+    }, {
+        'server': 'a2plcpnl0893'
+    }) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.
+</script>
+<script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script></html>

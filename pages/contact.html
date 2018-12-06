@@ -1,0 +1,243 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Canoeing The Grand</title>
+    <link href="../interface1_project2/css/alertify.min.css" rel="stylesheet">
+    <link href="../interface1_project2/css/bootstrap.css" rel="stylesheet">
+    <link href="../interface1_project2/css/background.css" rel="stylesheet">
+    <link href="../css/design.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 fixed-top">
+        <a href="../index.html" class="navbar-brand"><img src="../interface1_project2/images/homePage/ctgLogo.jpg" width="120px" height="30px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item active"><a class="nav-link" href="tripInformation.html">Trip Info</a></li>
+                <li class="nav-item"><a class="nav-link" href="rates.html"> Rates</a></li>
+                <li class="nav-item"><a class="nav-link" href="bookNow.html">Reserve</a></li>
+                <li class="nav-item active"><a class="nav-link" href="groupInformation.html">More Info</a></li>
+        
+            </ul>
+        </div>
+    </nav>
+
+
+
+<div class="container well" style="margin-top: 80px">
+
+    <form class="form-horizontal" action="validate.php" method="post"  id="myForm">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend style="margin-bottom: 2%"><h2>Contact Us</h2></legend>
+            <div class="row">
+            <div class="col-md-6">
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="control-label"><strong>Full Name</strong></label>
+                    <div class="inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="full_Name" placeholder="Full Name" class="form-control"  type="text" id="full_Name" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="control-label"><strong>Email Address</strong></label>
+                    <div class="inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input name="customerEmailAddress" placeholder="Email Address" class="form-control"  type="email" id="customerEmailAddress" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="control-label"><strong>Phone Number</strong></label>
+                    <div class="inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                            <input name="customerPhoneNumber" placeholder="(519) 896-0290" class="form-control" type="tel" id="phoneNumber" maxlength="15" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="control-label"><strong>Address</strong></label>
+                    <div class="inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                            <input name="customerHomeAddress" placeholder="Address" class="form-control" type="text" id="homeAddress" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label"><strong>Questions, Comments or Concerns?</strong></label>
+                    <div class="inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <textarea class="form-control" id="questionsComments" name="comment" rows="6" placeholder="Example: Hi, which trip do you recommend for our first time? Thank you !"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label"><strong>Is this your first trip?</strong></label>
+                    <div class="col-md-4">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="question" value="yes" /> Yes
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="question" value="no" checked/> No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            <!-- Button -->
+            <div class="form-group">
+                <label class="control-label"></label>
+                <div class="col-md-4">
+                    <input type="submit" name="submit" class="btn btn-primary" id="submit" value="Send">
+                    <button type="reset" class="btn">Reset Fields</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../js/jquery.js"></script>
+<script src="../js/popper.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/alertify.min.js"></script>
+</body>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'a2plcpnl0893'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script></html>
+<script>
+    $( document ).ready(function() {
+        // Grab global variables
+        var full_Name = "";
+        var customerEmailAddress = "";
+        var phoneNumber = "";
+        var homeAddress = "";
+        var questionsComments = "";
+
+
+
+        // On click of the submit button
+        $("#submit").click(function(e) {
+            var validation = true;
+            alertify.dismissAll();
+
+            // Grab inputs and validate them
+            full_Name = $("#full_Name").val().trim();
+            customerEmailAddress = $("#customerEmailAddress").val().trim();
+            phoneNumber = $("#phoneNumber").val().trim();
+            homeAddress = $("#homeAddress").val().trim();
+            questionsComments =  $("#questionsComments").val();
+
+            if(full_Name == '' || full_Name == null){
+                validation = false;
+                alertify.error("Please enter a name.",5);
+            }
+            if(customerEmailAddress == "" || customerEmailAddress == null){
+                alertify.error("Please enter a email address.",5);
+                validation = false;
+            }
+            else if(validateEmail(customerEmailAddress) == false){
+                alertify.error("Please enter a valid email address.",5);
+                validation = false;
+            }
+            if (phoneNumber.replace(/[^0-9]/g, "").length == 10) {
+                $("#phoneNumber").val(formatPhoneNumber(phoneNumber));
+            }
+            else{
+                alertify.error("Please enter a valid ten digit phone number.",5);
+                validation = false;
+            }
+            if(homeAddress == "" || homeAddress == null){
+                validation = false;
+                alertify.error("Please enter an address.",5);
+            }
+            if(questionsComments == "" || questionsComments == null){
+                validation = false;
+                alertify.error("Please enter a question, comment or concern.",5);
+            }
+            if(validation == false){
+                event.preventDefault();
+                return false;
+            }
+        });
+
+        $("#phoneNumber").keypress(function(e){
+            var RegexNumber = /^\d+$/;
+            var input = String.fromCharCode(e.keyCode);
+            if(!RegexNumber.test(input)){
+                return false;
+            }
+        });
+
+        $("#full_Name").keypress(function(e){
+            var RegexAlpha = /^[a-zA-Z\s]*$/;
+            var input = String.fromCharCode(e.keyCode);
+            if(!RegexAlpha.test(input)){
+                return false;
+            }
+        });
+
+        $("#homeAddress").keypress(function(e){
+            var RegexAddress = /[A-Za-z0-9'\.\-\s\,]/;
+            var input = String.fromCharCode(e.keyCode);
+            if(!RegexAddress.test(input)){
+                return false;
+            }
+        });
+
+        $("#phoneNumber").focusout(function(e){
+            phoneNumber = $("#phoneNumber").val().trim();
+            if(phoneNumber.length <= 12 && phoneNumber.length >= 10)
+                $("#phoneNumber").val(formatPhoneNumber(phoneNumber));
+        });
+
+        $("#phoneNumber").keyup(function(e){
+            phoneNumber = $("#phoneNumber").val().trim();
+            if(phoneNumber.length <= 12 && phoneNumber.length >= 10)
+                $("#phoneNumber").val(formatPhoneNumber(phoneNumber));
+        });
+
+        function validateEmail(email)
+        {
+            var re = /\S+@\S+\.\S+/;
+            return re.test(email);
+        }
+
+        function formatPhoneNumber(phoneNumber) {
+            var s2 = (""+phoneNumber).replace(/\D/g, '');
+            var m = s2.match(/^(\d{3})(\d{3})(\d{4})$/);
+            return (!m) ? null : m[1] + "-" + m[2] + "-" + m[3];
+        }
+    });
+</script>

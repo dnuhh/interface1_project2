@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    line-height: 1.6em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14pt;
+}
+
+body h1, h2, h3 {
+    text-transform: uppercase;
+   
+}
+
+.header {
+    margin: 10% 10% 70px;
+}
+
+.reservationFields {
+    height: auto;
+    margin: 0 10%;
+    padding: 0;
+}
+
+
+.grid-4-col {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    background-color: #e0e1e5;
+   
+
+}
+
+.cell1 {
+    grid-column-end: span 2;
+    grid-row-start: span 4;
+    background-color: #e0e1e5;
+    margin: 20px;
+}
+
+
+form {
+    margin: 10px;
+}
+
+input {
+    margin: 10px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+input[type=text],
+textarea {
+    width: 80%;
+    border-radius: 4px;
+    resize: both;
+
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+textarea:focus {
+    border: 3px solid #555;
+}
+
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    background-color: #45729E;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=button]:hover,
+input[type=submit]:hover,
+input[type=reset]:hover {
+    background-color: #233065;
+}
+
+
+
+.cell1 a:link {
+    color: #000;
+    text-decoration: none;
+}
+
+.cell1 a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+.cell1 a:hover {
+    color: rgb(160, 160, 160);
+    text-decoration: none;
+}
+
+.cell1 a:active {
+    color: rgb(90, 90, 90);
+    text-decoration: none;
+}
+
+.cell2 {
+    grid-column-end: span 2;
+    margin: 20px;
+}
+
+.cell3 {
+    grid-column-end: span 2;
+    background-color: #e0e1e5;
+    margin: 20px;
+}
+
+.cell3 h3 {
+    margin: 20px;
+}
+
+.cell3 p {
+    margin: 20px;
+}
+
+select {
+    width: 35%;
+    padding: 16px 20px;
+    margin: 30px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+.time {
+    margin-left: 20px;
+}
+
+.cell4 {
+    grid-column-end: span 2;
+    align-items: right;
+    margin: 20px;
+}
+
+.cell6 {
+    grid-column-end: span 2;
+    margin: 20px;
+
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+/* Month header */
+.month {
+    padding: 20px 25px;
+    background: #c7c8cc;
+    text-align: center;
+}
+
+/* Month list */
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 0;
+    padding: 10px 0 10px;
+    background-color: white;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13%;
+    color: #666;
+    text-align: center;
+    font-size: 10px;
+}
+
+/* Days (1-31) */
+.days {
+    padding: 10px 0;
+    background: white;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+    padding: 5px;
+    background: #666;
+    color: white !important
+}
+
+.cell5 {
+    grid-column-end: span 4;
+    background-color: #e0e1e5;
+    padding: 30px;
+    margin-top: 20px;
+
+}
+
+.grid-6-col {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0 10% 50px;
+    background-color: #e0e1e5;
+
+
+}
+
+.grid-6-col div {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+
+}
+
+.grid-6-col div p {
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+
+.pdf a {
+    color: #8d8680;
+}
+
+.pdf a:hover {
+    color: #4f4b47;
+    text-decoration: none;
+}
+h3 {
+    margin: 0 10% 10px;
+}
+
+.text {
+    margin: 0 10%;
+}
+
+
+/* Tablet Sized Screen */
+@media only screen and (max-width: 1024px) {
+
+    .grid-4-col {
+        grid-template-columns: 1fr;
+        display: inherit;
+    }
+
+
+    .cell5 {
+        margin: 20px;
+    }
+
+    
+    .reservationFields {
+        line-height: 40px;
+       
+    }
+    
+    .header h1 {
+        line-height: 40px;
+    }
+    
+    .cell6 {
+    margin-left: 20px;
+}
+    .grid-6-col {
+        grid-template-columns:repeat(2, 1fr); 
+    }
+
+}
+
+/* Phone Sized Screen */
+@media only screen and (max-width: 480px) {
+    
+   .reservationFields {
+        margin: 0;
+    }
+    .cell2 {
+    margin: 0;
+}
+    .cell3 {
+        margin: 0;
+    }
+    .cell4 {
+        margin: 0;
+    }
+    .cell5 {
+        margin: 0;
+    }
+    .cell6 {
+    margin-left: 0;
+        margin-top: 20px;
+    }
+    .grid-6-col {
+        margin: 0; 
+    }
+    .header {
+    margin: 20% 10% 70px;
+}
+        
