@@ -7,9 +7,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Canoeing The Grand</title>
-    <link href="../css/alertify.min.css" rel="stylesheet">
-    <link href="../css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/design_v.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/design_v.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <!--<link href="css/background.css" rel="stylesheet">-->
 </head>
 
@@ -24,40 +24,60 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="tripInformation.html">Trip Infomation</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../pages/rates.html">Trip Rates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Trip Rates</a></li>
                     <li class="nav-item"><a class="nav-link" href="reservation.html">Reserve</a></li>
                     <li class="nav-item"><a class="nav-link" href="">More Info</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-<div class="container well" style="margin-top: 200px" align="center">
-    <form class="form-signin" action="auth.php" method="post" name="loginForm">
-        <h3 style="margin: 50px">Employee Log In</h3>
+
+    <div class="main-contact">
+
+    <h2 style="text-align: center; margin-bottom: 0;"> Contact Us</h2><br>
+      <p style="text-align: center;"> Send us any questions by flling out this form or by calling us at <strong>(519) 896-0290 / 1-877-896-0290</strong>.</p>
+       <div class="contactWrapper">
+        <label>Full Name</label>
+        <input type="text" class="form-control" autofocus="" name="Name">
+
+        <label>Email</label>
+        <input type="text" class="form-control" name="mail">
         
-        <div  class="emploee-wrapper" >
-        <label style="margin-bottom: 3px"><strong>User Name</strong></label>
-        <input type="text" class="form-control" autofocus="" name="userName" style="width: 200px;margin-bottom: 1em;">
+         <label>Phone Number</label>
+        <input type="text" class="form-control" autofocus="" name="number">
 
-        <label style="margin-bottom: 3px;" ><strong>Password</strong></label>
-        <input type="password" class="form-control" name="passWord" style="width: 200px; ">
-       
-        <br>
-        <button> Sign In</button>
- </div>
-    </form><br>
-</div>
+        <label >Address</label>
+        <input type="text" class="form-control" name="address">
+
+      
+        <label >Comments</label>
+        <input type="text" class="form-control" id="comments" name="comments">
+        </div>
+        
+        <form>
+        <label >Is this your first trip ?</label><br>
+        <div class="containerCheck">
+          <input type="radio" name="trip" value="yes" checked>Yes<br>
+  <input type="radio" name="trip" value="no">No<br>
+        </div>
+
+        </form>
+          <div id="rght-all">
+           <button class="negative" id="contact"> Reset Fields </button>
+            <button class="positive" id="contact"> Submit </button>
+          </div>
+           
+    </div>
 
 
 
 
-
-
-
- <script src="../js/jquery.js"></script>
-    <script src="../js/popper.js"></script>
-    <script src="../js/bootstrap.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
+
+
 <script>
     'undefined' === typeof _trfq || (window._trfq = []);
     'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({
@@ -68,6 +88,4 @@
         'server': 'a2plcpnl0893'
     }) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.
 </script>
-<script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script>
-
 </html>
