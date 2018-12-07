@@ -241,9 +241,20 @@ button:hover {
     margin: 100px auto 0;
     text-align: center;
 }
-#rght-all{
-     display: inline-block;
-    float: right;
+#left-all{
+    display: inline-block;
+    float: left;
+    margin-bottom: 30px;
+}
+#left-all a{
+    transition: 0.75;
+color: black;
+    
+}
+
+#left-all a:hover{
+    color: #777;
+    text-decoration: none;
 }
 #rght{
     justify-content: flex-end;
