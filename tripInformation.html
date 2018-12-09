@@ -1,90 +1,132 @@
-
-
-
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Canoeing The Grand</title>
-    <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/background.css" rel="stylesheet">
     <link href="css/tripInfo_design.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 fixed-top">
-        <a href="../index.html" class="navbar-brand"><img src="images/homePage/ctgLogo.jpg" width="120px" height="30px"></a>
+<header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 fixed-top">
+            <a href="../index.html" class="navbar-brand"><img src="images/homePage/ctgLogo.jpg" width="120px" height="30px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item active"><a class="nav-link" href="tripInformation.html">Trip Info</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rates.html">Our Boats</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reserve</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="reservation.html">Personal</a>
+                            <a class="dropdown-item" href="reservation_group.html">Corporation</a>
+                            <a class="dropdown-item" href="reservation_school.html">School</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More Info</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="questions.html">FAQ</a>
+                            <a class="dropdown-item" href="riverSafety.html">Safety</a>
+                            <a class="dropdown-item" href="#">Privacy Policy</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="rates.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 fixed-top">
+        <a href="../index.html" class="navbar-brand"><img src="../images/homePage/ctgLogo.jpg" width="120px" height="30px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
-                <li class="nav-item active"><a class="nav-link" href="tripInformation.html">Trip Info</a></li>
-                <li class="nav-item"><a class="nav-link" href="rates.html"> Rates</a></li>
-                <li class="nav-item">
-                    <div class="dropdown show">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reserve
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="#">Personal</a>
-                            <a class="dropdown-item" href="#">Corporation</a>
-                            <a class="dropdown-item" href="#">School</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <div class="dropdown show">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More Info
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="#">FAQ</a>
-                            <a class="dropdown-item" href="#">Safety</a>
-                            <a class="dropdown-item" href="#">Privacy Policy</a>
-                        </div>
-                    </div>
-                </li>
-        
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item active"><a class="nav-link" href="tripInformation.html">Trip Infomation</a></li>
+                <li class="nav-item"><a class="nav-link" href="rates.html">Trip Rates</a></li>
+                <li class="nav-item"><a class="nav-link" href="bookNow.html">Reserve</a></li>
+                <li class="nav-item"><a class="nav-link" href="groupInformation.html">Groups</a></li>
+                <li class="nav-item"><a class="nav-link" href="questions.html">FAQs</a></li>
+                <li class="nav-item"><a class="nav-link" href="riverSafety.html">Safety</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
             </ul>
         </div>
-    </nav>
-    
-        <div class="info">
-        <h1>Trip Information</h1>   
-        <p>Our trips offer trips for all skill levels. Although we specialize in shuttled trips, canoes are also available for rental. Every canoe trip price includes two personal floatation devices (PFDs), canoe, paddles, parking and shuttle service. We provide service by reservation (strongly recommended), and drop in.</p>
+    </nav>-->
+    <div class="info">
+        <h1 class="mainHead">Trip Information</h1>
+        <div class="legend">
+            <div class="difficulty cell">
+                <i class="fas fa-circle beg"></i>
+                <p>- Beginner</p>
+                <br>
+                <i class="fas fa-square inter"></i>
+                <p>- Intermediate</p>
+                <br>
+                <i class="fas fa-star adv"></i>
+                <p>- Advanced</p>
+            </div>
+            <div class="otherSym cell">
+                <i class="far fa-clock"></i>
+                <p>- Time</p>
+                <br>
+                <i class="fas fa-dollar-sign"></i>
+                <p>- Cost</p>
+            </div>
+        </div>
+        <p class="brief">Our trips offer trips for all skill levels. Although we specialize in shuttled trips, canoes are also available for rental. Every canoe trip price includes two personal floatation devices (PFDs), canoe, paddles, parking and shuttle service. We provide service by reservation (strongly recommended), and drop in.</p>
+
         <div class="tripDetails">
             <div>
-                <div class="locHead"><h4>North of CTG</h4></div>
-                <div class="cell tripTab" id="ottCK">
-                    <div class="tripBasicInfo">
-                        <h4 class="tripName">Otterbein</h4>
-                        <h5>Canoe/Kayak</h5>
-                        <h6 class="summary">
-                        <i class="fas fa-circle beg">&ensp;</i>
-                            
-                        <i class="far fa-clock"></i>
-                        <p>1.5 - 2 hrs&ensp;</p>
-                        
-                        <i class="fas fa-dollar-sign"></i>
-                    </h6>
+                <div class="locHead">
+                    <h3>North of CTG</h3>
+                <div class="oneTrip" onclick="myFunction('ottCK')">
+                    <div class="cell tripTab" id="ottCK">
+
+                        <div class="tripBasicInfo">
+                            <h4 class="tripName">Otterbein</h4>
+                            <h5 id="ottCKTripType">Canoe/Kayak</h5>
+                            <h6 class="summary" id="ottCKSum">
+                                <i class="fas fa-circle beg">&ensp;</i>
+
+                                <i class="far fa-clock"></i>
+                                <p>1.5 - 2 hrs&ensp;</p>
+
+                                <i class="fas fa-dollar-sign"></i>
+                            </h6>
+                        </div>
                     </div>
-                    
-                
+                    <div class="textBox">
+                        <div class="description">
+                            <p>Our trips offer trips for all skill levels. Although we specialize in shuttled trips, canoes are also available for rental. Every canoe trip price includes two personal floatation devices (PFDs), canoe, paddles, parking and shuttle service. We provide service by reservation (strongly recommended), and drop in.</p>
+                        </div>
+
+
+                    </div>
                 </div>
+
                 <div class="cell tripTab" id="ottT">
                     <div class="tripBasicInfo">
                         <h4 class="tripName">Otterbein</h4>
                         <h5>Tubing</h5>
-                        <h6 class="summary" >
-                        <i class="fas fa-circle beg">&ensp;</i>
-                        <i class="far fa-clock"></i>
-                        <p>3 - 4 hrs&ensp;</p>
-                        
-                        <i class="fas fa-dollar-sign"></i>
-                    </h6>
+                        <h6 class="summary">
+                            <i class="fas fa-circle beg">&ensp;</i>
+                            <i class="far fa-clock"></i>
+                            <p>3 - 4 hrs&ensp;</p>
+
+                            <i class="fas fa-dollar-sign"></i>
+                        </h6>
                     </div>
                 </div>
                 <div class="cell tripTab" id="bresCK">
@@ -92,12 +134,12 @@
                         <h4 class="tripName">Breslau</h4>
                         <h5>Canoe/Kayak</h5>
                         <h6 class="summary">
-                        <i class="fas fa-circle beg">&ensp;</i>
-                        <i class="far fa-clock"></i>
-                        <p>2 - 2.5 hrs&ensp;</p>
-                        
-                        <i class="fas fa-dollar-sign"></i>
-                    </h6>
+                            <i class="fas fa-circle beg">&ensp;</i>
+                            <i class="far fa-clock"></i>
+                            <p>2 - 2.5 hrs&ensp;</p>
+
+                            <i class="fas fa-dollar-sign"></i>
+                        </h6>
                     </div>
                 </div>
                 <div class="cell tripTab" id="kfCK">
@@ -105,12 +147,12 @@
                         <h4 class="tripName">Kaufman's Flats</h4>
                         <h5>Canoe/Kayak</h5>
                         <h6 class="summary">
-                        <i class="fas fa-square inter">&ensp;</i>
-                        <i class="far fa-clock"></i>
-                        <p>4 - 5 hrs&ensp;</p>
-                        
-                        <i class="fas fa-dollar-sign"></i>
-                    </h6>
+                            <i class="fas fa-square inter">&ensp;</i>
+                            <i class="far fa-clock"></i>
+                            <p>4 - 5 hrs&ensp;</p>
+
+                            <i class="fas fa-dollar-sign"></i>
+                        </h6>
                     </div>
                 </div>
                 <div class="cell tripTab" id="conCK">
@@ -118,12 +160,12 @@
                         <h4 class="tripName">Conestogo</h4>
                         <h5>Canoe/Kayak</h5>
                         <h6 class="summary">
-                        <i class="fas fa-square inter">&ensp;</i>
-                        <i class="far fa-clock"></i>
-                        <p>6 - 7 hrs&ensp;</p>
-                        <i class="fas fa-dollar-sign"></i>
-                        <i class="fas fa-dollar-sign"></i>
-                    </h6>
+                            <i class="fas fa-square inter">&ensp;</i>
+                            <i class="far fa-clock"></i>
+                            <p>6 - 7 hrs&ensp;</p>
+                            <i class="fas fa-dollar-sign"></i>
+                            <i class="fas fa-dollar-sign"></i>
+                        </h6>
                     </div>
                 </div>
                 <div class="cell tripTab" id="wmCK">
@@ -131,63 +173,47 @@
                         <h4 class="tripName">West Montrose</h4>
                         <h5>Canoe/Kayak</h5>
                         <h6 class="summary">
-                        <i class="fas fa-square inter">&ensp;</i>
-                        <i class="far fa-clock"></i>
-                        <p>7 - 8 hrs&ensp;</p>
-                        <i class="fas fa-dollar-sign"></i>
-                        <i class="fas fa-dollar-sign"></i>
-                    </h6>
+                            <i class="fas fa-square inter">&ensp;</i>
+                            <i class="far fa-clock"></i>
+                            <p>7 - 8 hrs&ensp;</p>
+                            <i class="fas fa-dollar-sign"></i>
+                            <i class="fas fa-dollar-sign"></i>
+                        </h6>
                     </div>
                 </div>
-                <div class="locHead"><h4>South of CTG</h4></div>
-                
+                <div class="locHead">
+                    <h3>South of CTG</h3>
+                </div>
+
                 <div class="cell tripTab" id="blairCK">
                     <div class="tripBasicInfo">
-                        <h4 class="tripName" >Blair</h4>
+                        <h4 class="tripName">Blair</h4>
                         <h5>Canoe/Kayak</h5>
                         <h6 class="summary">
-                        <i class="fas fa-star adv">&ensp;</i>                       
-                        <i class="far fa-clock"></i>
-                        <p>2.5 - 3 hrs&ensp;</p>
-                        <i class="fas fa-dollar-sign"></i>
-                        <i class="fas fa-dollar-sign"></i>
-                    </h6>
+                            <i class="fas fa-star adv">&ensp;</i>
+                            <i class="far fa-clock"></i>
+                            <p>2.5 - 3 hrs&ensp;</p>
+                            <i class="fas fa-dollar-sign"></i>
+                            <i class="fas fa-dollar-sign"></i>
+                        </h6>
                     </div>
                 </div>
                 <div class="cell tripTab" id="rbCK">
                     <div class="tripBasicInfo">
-                        <h4 class="tripName" >River Bluffs</h4>
+                        <h4 class="tripName">River Bluffs</h4>
                         <h5>Canoe/Kayak</h5>
                         <h6 class="summary">
-                        <i class="fas fa-star adv">&ensp;</i>
-                        <i class="far fa-clock"></i>
-                        <p>4 - 5 hrs&ensp;</p>
-                        <i class="fas fa-dollar-sign"></i>
-                        <i class="fas fa-dollar-sign"></i>
-                        <i class="fas fa-dollar-sign"></i>
-                    </h6>
+                            <i class="fas fa-star adv">&ensp;</i>
+                            <i class="far fa-clock"></i>
+                            <p>4 - 5 hrs&ensp;</p>
+                            <i class="fas fa-dollar-sign"></i>
+                            <i class="fas fa-dollar-sign"></i>
+                            <i class="fas fa-dollar-sign"></i>
+                        </h6>
                     </div>
-                </div>
-            </div>  
-            <div class="legend">
-                <div class="difficulty cell">
-                    <i class="fas fa-circle beg"></i>
-                    <p>- Beginner</p>
-                    <br>
-                    <i class="fas fa-square inter"></i>
-                    <p>- Intermediate</p>
-                    <br>
-                    <i class="fas fa-star adv"></i>
-                    <p>- Advanced</p>
-                    </div>
-                <div class="otherSym cell">
-                    <i class="far fa-clock"></i>
-                    <p>- Time</p>
-                    <br>
-                    <i class="fas fa-dollar-sign"></i>
-                    <p>- Cost</p>
                 </div>
             </div>
+
             <hr>
             <h2 id="mapHead">Trip Starting Points</h2>
             <div class="grid-3-col">
@@ -196,23 +222,28 @@
                 </div>
             </div>
             <hr>
-        
-    </div>
 
+        </div>
+    </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../js/jquery.js"></script>
-    <script src="../js/popper.js"></script>
-    <script src="../js/bootstrap.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    
 </body>
-<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'a2plcpnl0893'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script></html>
+<script>
+    'undefined' === typeof _trfq || (window._trfq = []);
+    'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({
+        'tccl.baseHost': 'secureserver.net'
+    }), _trfd.push({
+        'ap': 'cpsh'
+    }, {
+        'server': 'a2plcpnl0893'
+    }) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.
+</script>
+<script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script>
 
-
-
-
-
-
-
-
-
+</html>
