@@ -16,13 +16,15 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 fixed-top">
-            <a href="#" class="navbar-brand"><img src="images/images_home__/ctgLogo.jpg" width="120px" height="30px"></a>
+            <a href="../index.html" class="navbar-brand"><img src="images/homePage/ctgLogo.jpg" width="120px" height="30px"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
+
+                   
                     <li class="nav-item"><a class="nav-link" href="tripInformation.html">Trip Information</a></li>
                     <li class="nav-item active"><a class="nav-link" href="boats_info.html">Our Boats</a></li>
                     <li class="nav-item dropdown">
@@ -41,7 +43,7 @@
                             <a class="dropdown-item" href="#">Privacy Policy</a>
                         </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="rates.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
         </nav>
@@ -56,34 +58,35 @@
 
         <div class="boat-section" id="canoe">
             <h2>Canoe</h2>
-            <button class="collapsible" id="rght">Learn more</button>
-            <div class="content">
-                <p> Canoeing the grand is an experience that is both iconic and peaceful. As you quietly paddle our beautiful heritage river you will discover our region from a whole new vantage point.<br>
-                Canoeing the Grand uses Old Town 15'8" canoes. That are flat-bottom, stable crafts, ideal for novice or recreational use.
-                    Canoe Specifications Weight: 80 lbs. Capacity: 800 lbs, 2 adults and 2 children age 3-12, or 3 adults.<img src="images/boats/canoe7.png"></p>
-            </div>
+              <button data-toggle="collapse" data-target="#demo" style="background-color: transparent;">Learn more</button>
+            <ul id="demo" class="collapse">
+                <li>Old Town 15'8" canoes</li>
+                <li>Flat-bottom</li>
+                <li>Stable crafts</li>
+                <li>Weight: 80 lbs</li>
+                <li>Capacity: 800 lbs</li>
+                <li>2 adults and 2 children age 3-12, or 3 adults</li>
+            </ul>
         </div>
-
         <div class="boat-section" id="kayak">
             <h2> Kayaks</h2>
-            <p> Kayaking is an easy, safe way to navigate our river. Our ocean kayaks are roomy, stable, have adjustable foot braces and are easy to maneuver. Kayaks allow you to discover the river as a group or give you the freedom to adventure solo.
-            </p>
-            <button class="collapsible" id="rght-all">Learn more</button>
-            <div class="content">
-                <p>Canoeing the Grand uses Old Town Otter XT 9'6" kayaks. That are flat-bottom, stable crafts, ideal for novice or recreational use.
-                    Adult Single Weight: 39 lbs. 9' Capacity: 275 lbs, 1 person.
-                    Adult Tandem Weight: 61 lbs. 14' Capacity: 500 lbs, 2 persons.
-                    Kids Single Weight: 29 lbs. 7'5" Capacity: 115 lbs, 1 person.<img src="images/boats/kayaks.png"></p>
-            </div>
+            <button data-toggle="collapse" data-target="#demo1" style="background-color: transparent;">Learn more</button>
+            <ul  id="demo1"  class="collapse">
+                <li>Old Town Otter XT 9'6" kayaks</li>
+                <li>Flat-bottom</li>
+                <li>Stable crafts</li>
+                <li>Adult Single Weight: 39 lbs. 9' Capacity: 275 lbs, 1 person.</li>
+                <li>
+                    Adult Tandem Weight: 61 lbs. 14' Capacity: 500 lbs, 2 persons.</li>
+                <li>Kids Single Weight: 29 lbs. 7'5" Capacity: 115 lbs, 1 person.</li>
+            </ul>
         </div>
 
         <div class="boat-section" id="tube">
-            <h2> tubes</h2>
-            <p>Tubing is for those that like to take it slow! It is a perfect way to enjoy the river with friends and family when time is on your side. The tubes are sturdy, comfortable, and hook easily together for that “group experience”.</p>
-            <button class="collapsible" id="rght-all">Learn more</button>
-            <div class="content">
-                <p><img src="images/boats/tubePic.png"></p>
-            </div>
+            <h2 style="margin-top: 20px;"> tubes</h2>
+            <ul>
+                <li>Tubing is for those that like to take it slow! </li>
+            </ul>
         </div>
 
     </section>
