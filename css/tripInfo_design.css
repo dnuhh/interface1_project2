@@ -6,9 +6,16 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 .info{
-    margin: 80px 10% 0 ;
+    margin: 100px 10% 0 ;
     padding: 0;
     height: auto;
+}
+h1, h2, h3{
+    text-transform: uppercase;
+}
+h3, h4, h5{
+    margin: 0;
+    padding: 0;
 }
 .tripDetails{
     height: auto;
@@ -28,27 +35,31 @@ body{
     margin: 0;
     height: auto;
 }
-h3{
-    margin: 0;
-    padding: 0;
-}
-h4, h5{
-    margin: 0;
-    padding: 0;
-}
+
 .cell{
     transition: all 0.8s;
 }
 .tripTab{
-    margin: 10px 0;
+    margin: 10px 0 0 0;
     padding: 0 15%;
     transition: all 0.5s;
     height: 300px;
     display: grid;
     color: #fff;
+    transition: all 0.8s;
 }
-.tripTab:hover{
+.tripTab:hover .tripBasicInfo{
     padding-top: 10px;
+}
+.textBox{
+    display: none;
+    background: rgb(220,220,220);
+    margin: 0 0 10px 0;
+    padding: 20px 15%;
+    height: 500px;
+}
+.brief{
+    width: 60%
 }
 .cell .tripBasicInfo{
     display: block;
@@ -80,6 +91,9 @@ h4, h5{
     font-size: 18px;
     margin: 8px 0;
 }
+.tripBasicInfo{
+    transition: all 0.8s;
+}
 .tripBasicInfo p{
      display: inline;
     font-size: 13px;
@@ -97,7 +111,7 @@ h4, h5{
 .legend{
     clear: both;
     display: grid;
-    margin: 10px 0 20px;
+    margin: 0;
     height: auto;
     grid-template-columns: 150px 100px;
     font-size: 14px;
@@ -110,7 +124,7 @@ h4, h5{
     display: block;
     float: left;
     width: 15px;
-    margin: 6px;
+    margin: 0 6px;
     padding: 0;
 }
 .legend p{
@@ -169,3 +183,4 @@ hr{
     background-size: cover;
     background-position: 50% 65%;
 }
+
