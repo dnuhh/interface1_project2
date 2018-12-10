@@ -374,7 +374,8 @@ button:hover {
     }
 
     .boat-section {
-       margin: 0 auto;
+        padding:15%;
+        margin: 0 auto;
         height: 400px;
     }
 
