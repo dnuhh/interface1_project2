@@ -47,23 +47,23 @@
                 <div class="cell1">
                     <form>
                         Organization/Group Name:<br>
-                        <input type="text" name="groupname" placeholder="Group Name..."><br>
+                        <input type="text" name="groupname" placeholder="Group Name..."><br><br>
                         Contact Name:<br>
-                        <input type="text" name="contactname" placeholder="Contact Name..."><br>
+                        <input type="text" name="contactname" placeholder="Contact Name..."><br><br>
                         Contact Email Address:<br>
-                        <input type="text" name="email" placeholder="Email..."><br>
+                        <input type="text" name="email" placeholder="Email..."><br><br>
                         Contact Phone Number:<br>
-                        <input type="text" name="phonenumber" placeholder="Phone Number..."><br>
+                        <input type="text" name="phonenumber" placeholder="Phone Number..."><br><br>
                         Phone Extension:<br>
-                        <input type="text" name="ext" placeholder="Phone Extension..."><br>
+                        <input type="text" name="ext" placeholder="Phone Extension..."><br><br>
                         Organization/Group Address:<br>
-                        <input type="text" name="groupaddress" placeholder="Group Address..."><br>
+                        <input type="text" name="groupaddress" placeholder="Group Address..."><br><br>
                         Country:<br>
-                        <input type="text" name="country" placeholder="Country..."><br>
+                        <input type="text" name="country" placeholder="Country..."><br><br>
                         City:<br>
-                        <input type="text" name="city" placeholder="City..."><br>
+                        <input type="text" name="city" placeholder="City..."><br><br>
                         Postal Code:<br>
-                        <input type="text" name="postalcode" placeholder="Postal Code..."><br>
+                        <input type="text" name="postalcode" placeholder="Postal Code..."><br><br>
                         How many people are in your group (including children?:<br>
                         <input type="text" name="numbergroup" placeholder="0"><br><br>
 
@@ -80,19 +80,19 @@
                         <br><br>
 
                         How many canoes?:<br>
-                        <input type="text" name="numbercanoe" placeholder="0"><br>
+                        <input type="text" name="numbercanoe" placeholder="0"><br><br>
 
                         Is this your first trip with us?<br>
                         <input type="radio" name="firsttrip" value="yes" checked> Yes<br>
-                        <input type="radio" name="firsttrip" value="no"> No<br>
+                        <input type="radio" name="firsttrip" value="no"> No<br><br>
 
                         Does your group require a guide on your trip?<br>
                         <input type="radio" name="guide" value="yes" checked> Yes<br>
-                        <input type="radio" name="guide" value="no"> No<br>
+                        <input type="radio" name="guide" value="no"> No<br><br>
 
                         Does your group require transportation to Canoe The Grand?<br>
                         <input type="radio" name="trans" value="yes" checked> Yes<br>
-                        <input type="radio" name="trans" value="no"> No<br>
+                        <input type="radio" name="trans" value="no"> No<br><br>
 
 
                         Does your group require lunch after your trip?<br>
@@ -101,8 +101,7 @@
 
 
 
-                        <br><br>
-                        <a href="reservation_group.html">Reset Fields</a>
+                      
                     </form>
                 </div>
 
@@ -163,21 +162,27 @@
                 <div class="cell3">
                     <h3>Select Time</h3>
                     <div class="time">
-                    <select>
-                        <option value="eightam">8:00 AM</option>
-                        <option value="nineam">9:00 AM</option>
-                        <option value="tenam">10:00 AM</option>
-                        <option value="elevenam">11:00 AM</option>
-                    </select>
+                        <select>
+                            <option value="eightam">8:00 AM</option>
+                            <option value="nineam">9:00 AM</option>
+                            <option value="tenam">10:00 AM</option>
+                            <option value="elevenam">11:00 AM</option>
+                            <option value="elevenam">12:00 PM</option>
+                            <option value="elevenam">1:00 PM</option>
+                            <option value="elevenam">2:00 PM</option>
+                        </select>
 
-                    to
+                        to
 
-                    <select>
-                        <option value="eightam">8:00 AM</option>
-                        <option value="nineam">9:00 AM</option>
-                        <option value="tenam">10:00 AM</option>
-                        <option value="elevenam">11:00 AM</option>
-                    </select>
+                        <select>
+                            <option value="eightam">8:00 AM</option>
+                            <option value="nineam">9:00 AM</option>
+                            <option value="tenam">10:00 AM</option>
+                            <option value="elevenam">11:00 AM</option>
+                            <option value="elevenam">12:00 PM</option>
+                            <option value="elevenam">1:00 PM</option>
+                            <option value="elevenam">2:00 PM</option>
+                        </select>
                     </div>
                     <br>
                     <p>If you would like to book a trip for today, please
@@ -185,15 +190,16 @@
                         online system only allows for bookings in advance
                         !</p>
                 </div>
-
-            </div>
-            <div class="cell5">
-                Question, Comments, or Concerns?
-                <textarea rows="4" cols="50" name="comment" form="usrform" placeholder="Question, Comments, or Concerns..."> </textarea>
-            </div>
-                <div class="cell6">
-                <input type="submit" value="Submit">
+                <div class="cell5">
+                    Question, Comments, or Concerns?
+                    <textarea rows="4" cols="50" name="comment" form="usrform" placeholder="Question, Comments, or Concerns..."> </textarea>
                 </div>
+                <div class="cell6">
+                    <input type="submit" value="Submit">
+                    <a href="reservation_group.html">Reset Fields</a>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -216,8 +222,9 @@
             <a href="https://www.instagram.com/canoethegrand/"><i class="fab fa-instagram"></i>Check out our instagram!</a>
             <br>
             <div class="item5">
-                <a href="employee.html"><i class="fas fa-sign-out-alt"></i>Employee SignIn</a>
+                <a href="login.html"><i class="fas fa-sign-out-alt"></i>Employee Log In</a>
             </div>
+            <div class="bottomSpace"></div>
         </div>
     </div>
 
