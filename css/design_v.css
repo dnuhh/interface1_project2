@@ -1,7 +1,18 @@
-.rates {
-    width: 80%;
+.intro-name {
+    width: 100%;
+    position: absolute;
+    top: 20%;
     margin: 0 auto;
+    padding: 0 20px;
+    z-index: 200;
+    color: white;
 
+}
+
+.intro-name h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 60px;
 }
 
 .videoWrapper {
@@ -196,6 +207,15 @@ i:hover {
     margin: 0;
 }
 
+.contactWrapper textarea {
+    height: auto;
+    border-color: rgb(220, 220, 220);
+    border-radius: 5px;
+    margin: 0;
+    width: 60%;
+    padding: 0;
+}
+
 .contactWrapper input {
     width: 40%;
     margin-bottom: 1em;
@@ -228,82 +248,92 @@ button {
 button:hover {
     background-color: #233065;
 }
-.negative{
+
+.negative {
     background-color: white;
     color: #45729E;
     border-color: #45729E;
 }
+
 #contact {
-    margin:  30px 10px 0;
-  
+    margin: 30px 10px 0;
+
 }
+
 .intro {
     margin: 100px auto 0;
     text-align: center;
 }
-#left-all{
+
+#left-all {
     display: inline-block;
     float: left;
     margin-bottom: 30px;
 }
-#left-all a{
+
+#left-all a {
     transition: 0.75;
-color: black;
-    
+    color: black;
+
 }
 
-#left-all a:hover{
+#left-all a:hover {
     color: #777;
     text-decoration: none;
 }
-#rght{
+
+#rght {
     justify-content: flex-end;
-     display: flex;
+    display: flex;
     float: right;
     margin-right: 40px;
 }
-.boat-section{
-    min-height: 300px; 
-    background-color: aqua;
-    margin: 0;
-}
-.boat-section h2{
-    margin-top: 10px;
-    margin-left: 10px;
+
+.boat-section {
+    text-shadow: 2px 2px 6px #000000;
     color: white;
+    height: 400px;
+    padding: 100px;
+    margin: 10px 0;
+}
+
+.boat-section h2 {
     text-transform: uppercase;
-    padding: 20px;
-    background-image: linear-gradient(to right, #333 ,rgba(255,0,0,0) );
+    transition: 0.25s;
 }
+
 .boat-section p {
-
     float: left;
-    margin: 10px;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 5px 10px 10px #aaaaaa;
 }
-.boat-section img{
-width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
+
+.boat-section ul {
+    list-style-type: square;
 }
-#canoe{
-    background-image: url(../images/images_home__/homeIMG1.jpg);
+
+.boat-section ul li {
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+#canoe {
+
+    background-image: url(../images/boats/ben-den-engelsen-344150-unsplash.jpg);
     background-position: center;
     background-size: cover;
 }
 
-#kayak{
-    background-image: url(../images/images_home__/daria-tumanova-320526-unsplash.jpg);
+#kayak {
+    background-image: url(../images/boats/alex-perez-753751-unsplash.jpg);
     background-position: center;
     background-size: cover;
 }
-#tube{
-    background-image: url(../images/images_home__/paul-gilmore-314386-unsplash.jpg);
+
+#tube {
+    background-image: url(../images/boats/oliver-sjostrom-585649-unsplash%20copy.jpg);
     background-position: center;
     background-size: cover;
 }
+
 /*for cellphones*/
 @media only screen and (max-width: 480px) {
 
@@ -338,8 +368,14 @@ width: 100%;
     .contactWrapper #comments {
         width: 100%;
     }
-    .boat-section{
-    min-height: 350px;
+
+    .contactWrapper textarea {
+        width: 100%;
+    }
+
+    .boat-section {
+       margin: 0 auto;
+        height: 400px;
     }
 
 }
@@ -365,10 +401,9 @@ width: 100%;
     }
 
 }
-@media only screen and (min-width: 850px)
-{  
-    .boatsBody{
-        margin: 0 15%;
-    } 
-}
 
+@media only screen and (min-width: 850px) {
+    .boatsBody {
+        margin: 0 15%;
+    }
+}
