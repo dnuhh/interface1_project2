@@ -170,6 +170,10 @@ button:hover {
     height: 400px;
     padding: 100px;
     margin: 10px 0;
+    transition:0.75s;
+}
+.boat-section:hover{
+     padding-top: 90px;
 }
 
 .boat-section h2 {
@@ -183,6 +187,7 @@ button:hover {
 
 .boat-section ul {
     list-style-type: square;
+    padding: 15px;
 }
 
 .boat-section ul li {
