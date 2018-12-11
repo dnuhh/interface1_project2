@@ -10,6 +10,7 @@
     <link href="css/background.css" rel="stylesheet">
     <link href="css/tripInfo_design.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/accordion.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 
@@ -88,139 +89,190 @@
         <p class="brief">Our trips offer trips for all skill levels. Although we specialize in shuttled trips, canoes are also available for rental. Every canoe trip price includes two personal floatation devices (PFDs), canoe, paddles, parking and shuttle service. We provide service by reservation (strongly recommended), and drop in.</p>
 
         <div class="tripDetails">
-                <div class="locHead">
-                    <h3>North of CTG</h3>
-                    <div class="oneTrip" onclick="myFunction('ottCK')">
-                        <div class="cell tripTab" id="ottCK">
-
-                            <div class="tripBasicInfo">
-                                <h4 class="tripName">Otterbein</h4>
-                                <h5 id="ottCKTripType">Canoe/Kayak</h5>
-                                <h6 class="summary" id="ottCKSum">
-                                    <i class="fas fa-circle beg">&ensp;</i>
-
-                                    <i class="far fa-clock"></i>
-                                    <p>1.5 - 2 hrs&ensp;</p>
-
-                                    <i class="fas fa-dollar-sign"></i>
-                                </h6>
-                            </div>
-                        </div>
-                        <div class="textBox">
-                            <div class="description">
-                                <p>Our trips offer trips for all skill levels. Although we specialize in shuttled trips, canoes are also available for rental. Every canoe trip price includes two personal floatation devices (PFDs), canoe, paddles, parking and shuttle service. We provide service by reservation (strongly recommended), and drop in.</p>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                    <div class="cell tripTab" id="ottT">
+            <div class="locHead">
+                <h3>North of CTG</h3>
+                <button class="accordion" id="ottCK">
+                    <div class="cell tripTab">
                         <div class="tripBasicInfo">
                             <h4 class="tripName">Otterbein</h4>
-                            <h5>Tubing</h5>
-                            <h6 class="summary">
+                            <h5 id="ottCKTripType">Canoe/Kayak</h5>
+                            <h6 class="summary" id="ottCKSum">
                                 <i class="fas fa-circle beg">&ensp;</i>
+
                                 <i class="far fa-clock"></i>
-                                <p>3 - 4 hrs&ensp;</p>
+                                <p>1.5 - 2 hrs&ensp;</p>
 
                                 <i class="fas fa-dollar-sign"></i>
                             </h6>
                         </div>
                     </div>
-                    <div class="cell tripTab" id="bresCK">
-                        <div class="tripBasicInfo">
-                            <h4 class="tripName">Breslau</h4>
-                            <h5>Canoe/Kayak</h5>
-                            <h6 class="summary">
-                                <i class="fas fa-circle beg">&ensp;</i>
-                                <i class="far fa-clock"></i>
-                                <p>2 - 2.5 hrs&ensp;</p>
-
-                                <i class="fas fa-dollar-sign"></i>
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="cell tripTab" id="kfCK">
-                        <div class="tripBasicInfo">
-                            <h4 class="tripName">Kaufman's Flats</h4>
-                            <h5>Canoe/Kayak</h5>
-                            <h6 class="summary">
-                                <i class="fas fa-square inter">&ensp;</i>
-                                <i class="far fa-clock"></i>
-                                <p>4 - 5 hrs&ensp;</p>
-
-                                <i class="fas fa-dollar-sign"></i>
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="cell tripTab" id="conCK">
-                        <div class="tripBasicInfo">
-                            <h4 class="tripName">Conestogo</h4>
-                            <h5>Canoe/Kayak</h5>
-                            <h6 class="summary">
-                                <i class="fas fa-square inter">&ensp;</i>
-                                <i class="far fa-clock"></i>
-                                <p>6 - 7 hrs&ensp;</p>
-                                <i class="fas fa-dollar-sign"></i>
-                                <i class="fas fa-dollar-sign"></i>
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="cell tripTab" id="wmCK">
-                        <div class="tripBasicInfo">
-                            <h4 class="tripName">West Montrose</h4>
-                            <h5>Canoe/Kayak</h5>
-                            <h6 class="summary">
-                                <i class="fas fa-square inter">&ensp;</i>
-                                <i class="far fa-clock"></i>
-                                <p>7 - 8 hrs&ensp;</p>
-                                <i class="fas fa-dollar-sign"></i>
-                                <i class="fas fa-dollar-sign"></i>
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="locHead">
-                        <h3>South of CTG</h3>
-                    </div>
-
-                    <div class="cell tripTab" id="blairCK">
-                        <div class="tripBasicInfo">
-                            <h4 class="tripName">Blair</h4>
-                            <h5>Canoe/Kayak</h5>
-                            <h6 class="summary">
-                                <i class="fas fa-star adv">&ensp;</i>
-                                <i class="far fa-clock"></i>
-                                <p>2.5 - 3 hrs&ensp;</p>
-                                <i class="fas fa-dollar-sign"></i>
-                                <i class="fas fa-dollar-sign"></i>
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="cell tripTab" id="rbCK">
-                        <div class="tripBasicInfo">
-                            <h4 class="tripName">River Bluffs</h4>
-                            <h5>Canoe/Kayak</h5>
-                            <h6 class="summary">
-                                <i class="fas fa-star adv">&ensp;</i>
-                                <i class="far fa-clock"></i>
-                                <p>4 - 5 hrs&ensp;</p>
-                                <i class="fas fa-dollar-sign"></i>
-                                <i class="fas fa-dollar-sign"></i>
-                                <i class="fas fa-dollar-sign"></i>
-                            </h6>
-                        </div>
+                </button>
+                <div class="panel">
+                    <div class="description">
+                        <p>Our trips offer trips for all skill levels. Although we specialize in shuttled trips, canoes are also available for rental. Every canoe trip price includes two personal floatation devices (PFDs), canoe, paddles, parking and shuttle service. We provide service by reservation (strongly recommended), and drop in.</p>
                     </div>
                 </div>
 
-                <hr>
-                <h2 id="mapHead">Trip Starting Points</h2>
-                <div class="grid-3-col">
-                    <div class="map">
-                        <iframe src="https://www.google.com/maps/d/embed?mid=1IlI7mis52lwkt_1SYlJFJ_UbUcNny2_U" width="640" height="480"></iframe>
+                <button class="accordion" id="ottT">
+                <div class="cell tripTab" >
+                    <div class="tripBasicInfo">
+                        <h4 class="tripName">Otterbein</h4>
+                        <h5>Tubing</h5>
+                        <h6 class="summary">
+                            <i class="fas fa-circle beg">&ensp;</i>
+                            <i class="far fa-clock"></i>
+                            <p>3 - 4 hrs&ensp;</p>
+                            <i class="fas fa-dollar-sign"></i>
+                        </h6>
                     </div>
                 </div>
-                <hr>
+                </button>
+                <div class="panel">
+                    <div class="description">
+                        <p>Our trips offer trips for all skill levels. Although we specialize in shuttled trips, canoes are also available for rental. Every canoe trip price includes two personal floatation devices (PFDs), canoe, paddles, parking and shuttle service. We provide service by reservation (strongly recommended), and drop in.</p>
+                    </div>
+                </div>
+                
+                <button class="accordion" id="bresCK">
+                <div class="cell tripTab" >
+                    <div class="tripBasicInfo">
+                        <h4 class="tripName">Breslau</h4>
+                        <h5>Canoe/Kayak</h5>
+                        <h6 class="summary">
+                            <i class="fas fa-circle beg">&ensp;</i>
+                            <i class="far fa-clock"></i>
+                            <p>2 - 2.5 hrs&ensp;</p>
+
+                            <i class="fas fa-dollar-sign"></i>
+                        </h6>
+                    </div>
+                </div>
+                </button>
+                <div class="panel">
+                    <div class="description">
+                        <p>Our trips offer trips for all skill levels. Although we specialize in shuttled trips, canoes are also available for rental. Every canoe trip price includes two personal floatation devices (PFDs), canoe, paddles, parking and shuttle service. We provide service by reservation (strongly recommended), and drop in.</p>
+                    </div>
+                </div>
+                
+                <button class="accordion" id="kfCK">
+                <div class="cell tripTab">
+                    <div class="tripBasicInfo">
+                        <h4 class="tripName">Kaufman's Flats</h4>
+                        <h5>Canoe/Kayak</h5>
+                        <h6 class="summary">
+                            <i class="fas fa-square inter">&ensp;</i>
+                            <i class="far fa-clock"></i>
+                            <p>4 - 5 hrs&ensp;</p>
+                            <i class="fas fa-dollar-sign"></i>
+                        </h6>
+                    </div>
+                </div>
+                </button>
+                <div class="panel">
+                    <div class="description">
+                        <p>Our trips offer trips for all skill levels. Although we specialize in shuttled trips, canoes are also available for rental. Every canoe trip price includes two personal floatation devices (PFDs), canoe, paddles, parking and shuttle service. We provide service by reservation (strongly recommended), and drop in.</p>
+                    </div>
+                </div>
+                
+                <button class="accordion" id="conCK">
+                <div class="cell tripTab" >
+                    <div class="tripBasicInfo">
+                        <h4 class="tripName">Conestogo</h4>
+                        <h5>Canoe/Kayak</h5>
+                        <h6 class="summary">
+                            <i class="fas fa-square inter">&ensp;</i>
+                            <i class="far fa-clock"></i>
+                            <p>6 - 7 hrs&ensp;</p>
+                            <i class="fas fa-dollar-sign"></i>
+                            <i class="fas fa-dollar-sign"></i>
+                        </h6>
+                    </div>
+                </div>
+                </button>
+                <div class="panel">
+                    <div class="description">
+                        <p>Our trips offer trips for all skill levels. Although we specialize in shuttled trips, canoes are also available for rental. Every canoe trip price includes two personal floatation devices (PFDs), canoe, paddles, parking and shuttle service. We provide service by reservation (strongly recommended), and drop in.</p>
+                    </div>
+                </div>
+                
+                <button class="accordion" id="wmCK">
+                <div class="cell tripTab">
+                    <div class="tripBasicInfo">
+                        <h4 class="tripName">West Montrose</h4>
+                        <h5>Canoe/Kayak</h5>
+                        <h6 class="summary">
+                            <i class="fas fa-square inter">&ensp;</i>
+                            <i class="far fa-clock"></i>
+                            <p>7 - 8 hrs&ensp;</p>
+                            <i class="fas fa-dollar-sign"></i>
+                            <i class="fas fa-dollar-sign"></i>
+                        </h6>
+                    </div>
+                </div>
+                </button>
+                <div class="panel">
+                    <div class="description">
+                        <p>Our trips offer trips for all skill levels. Although we specialize in shuttled trips, canoes are also available for rental. Every canoe trip price includes two personal floatation devices (PFDs), canoe, paddles, parking and shuttle service. We provide service by reservation (strongly recommended), and drop in.</p>
+                    </div>
+                </div>
+                
+                <div class="locHead">
+                    <h3>South of CTG</h3>
+                </div>
+                
+                <button class="accordion" id="blairCK">
+                <div class="cell tripTab">
+                    <div class="tripBasicInfo">
+                        <h4 class="tripName">Blair</h4>
+                        <h5>Canoe/Kayak</h5>
+                        <h6 class="summary">
+                            <i class="fas fa-star adv">&ensp;</i>
+                            <i class="far fa-clock"></i>
+                            <p>2.5 - 3 hrs&ensp;</p>
+                            <i class="fas fa-dollar-sign"></i>
+                            <i class="fas fa-dollar-sign"></i>
+                        </h6>
+                    </div>
+                </div>
+                </button>
+                <div class="panel">
+                    <div class="description">
+                        <p>Our trips offer trips for all skill levels. Although we specialize in shuttled trips, canoes are also available for rental. Every canoe trip price includes two personal floatation devices (PFDs), canoe, paddles, parking and shuttle service. We provide service by reservation (strongly recommended), and drop in.</p>
+                    </div>
+                </div>
+                
+                <button class="accordion" id="rbCK">
+                <div class="cell tripTab">
+                    <div class="tripBasicInfo">
+                        <h4 class="tripName">River Bluffs</h4>
+                        <h5>Canoe/Kayak</h5>
+                        <h6 class="summary">
+                            <i class="fas fa-star adv">&ensp;</i>
+                            <i class="far fa-clock"></i>
+                            <p>4 - 5 hrs&ensp;</p>
+                            <i class="fas fa-dollar-sign"></i>
+                            <i class="fas fa-dollar-sign"></i>
+                            <i class="fas fa-dollar-sign"></i>
+                        </h6>
+                    </div>
+                </div>
+                </button>
+                <div class="panel">
+                    <div class="description">
+                        <p>Our trips offer trips for all skill levels. Although we specialize in shuttled trips, canoes are also available for rental. Every canoe trip price includes two personal floatation devices (PFDs), canoe, paddles, parking and shuttle service. We provide service by reservation (strongly recommended), and drop in.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <hr>
+            <h2 id="mapHead">Trip Starting Points</h2>
+            <div class="grid-3-col">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1IlI7mis52lwkt_1SYlJFJ_UbUcNny2_U" width="640" height="480"></iframe>
+                </div>
+            </div>
+            <hr>
         </div>
     </div>
     <!-- Bootstrap core JavaScript
@@ -231,22 +283,22 @@
     <script src="js/bootstrap.js"></script>
 
 </body>
-    <!--<script>
-    var coll = document.getElementsByClassName("collapsible");
+<script>
+    var acc = document.getElementsByClassName("accordion");
     var i;
 
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-                content.style.display = "none";
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("activeCurr");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
             } else {
-                content.style.display = "block";
+                panel.style.display = "block";
             }
         });
     }
-</script>-->
+</script>
 <script>
     'undefined' === typeof _trfq || (window._trfq = []);
     'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({
