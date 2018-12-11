@@ -10,13 +10,13 @@
 
 .activeCurr{
     margin: 0;
-    height: 100px;
+    
 }
 .activeCurr .cell{
-    height: 50px;
+    
 }
 .activeCurr h5, .activeCurr h6{
-    display: none;
+    
 }
 .activeCurr .tripTab:hover .tripBasicInfo{
     padding-top: 0;
@@ -26,6 +26,6 @@
     display: none;
     margin: 0 0 10px 0;
     overflow: hidden;
-        height: 500px;
+    height: 500px;
     background: rgb(220,220,220);
 }
