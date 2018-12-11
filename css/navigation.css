@@ -624,8 +624,23 @@ display: block;}
     .item4 {
         grid-column: 1;
         grid-row: 4;
+        margin: 50px 20% 0 20%;
     }
     
+.item1 {
+    margin: 50px 0 0 20%;
+}
+
+.item2 {
+    margin: 0 0 0 20%;
+}
+
+.item3 {
+    margin: 0 0 0 20%;
+}
+
+
+
     
 }
 
