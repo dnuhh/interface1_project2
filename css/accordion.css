@@ -1,0 +1,29 @@
+.accordion {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    margin: 0 0 10px 0;
+
+}
+
+.activeCurr{
+    margin: 0;
+    height: 100px;
+}
+.activeCurr .cell{
+    height: 50px;
+}
+.activeCurr h5, .activeCurr h6{
+    display: none;
+}
+.activeCurr .tripTab:hover .tripBasicInfo{
+    padding-top: 0;
+}
+.panel {
+    padding: 10px 18px;
+    display: none;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+}

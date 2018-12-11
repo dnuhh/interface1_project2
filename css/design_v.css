@@ -1,22 +1,33 @@
-.rates {
-    width: 80%;
+.intro-name {
+    width: 100%;
+    position: absolute;
+    top: 20%;
     margin: 0 auto;
+    padding: 0 20px;
+    z-index: 200;
+    color: white;
 
+}
+
+.intro-name h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 60px;
 }
 
 .videoWrapper {
     position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    height: 0;
+    overflow: hidden;
+    padding-top: 56.25%;
 }
 
 .videoWrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 .grid-3-col {
@@ -26,6 +37,10 @@
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-gap: 2vw;
+}
+
+.grid-3-col p {
+    text-align: left;
 }
 
 .grid-3-col h2 {
@@ -54,155 +69,196 @@ i:hover {
     margin: 0 auto;
 }
 
-#price-table {
-    margin-top: 80px;
-    align-content: center;
+.main-contact {
+    margin: 80px 20% 0;
 }
 
-.table-images {
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 5px;
+.contactWrapper {
+    margin: 0;
+    padding: 0;
 }
 
-.grid-2-col-rates {
-    height: 500px;
+.contactWrapper label {
+    margin: 0;
+}
+
+.contactWrapper textarea {
+    height: auto;
+    border-color: rgb(220, 220, 220);
+    border-radius: 5px;
+    margin: 0;
+    width: 60%;
+    padding: 0;
+}
+
+.contactWrapper input {
+    width: 40%;
+    margin-bottom: 1em;
+}
+
+.contactWrapper #comments {
+    height: 120px;
+    width: 60%;
+}
+
+.containerCheck {
+    display: inline-flex;
+    cursor: pointer;
+
+}
+
+.containerCheck input {
+    margin-left: 40px;
+    margin-right: 5px;
+}
+
+button {
+    background-color: #45729E;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 10px;
+    transition: 0.75s;
+}
+
+button:hover {
+    background-color: #233065;
+}
+
+.negative {
+    background-color: white;
+    color: #45729E;
+    border-color: #45729E;
+}
+
+#contact {
+    margin: 30px 10px 0;
+
+}
+
+.intro {
+    margin: 100px auto 0;
+    text-align: center;
+}
+
+#left-all {
+    display: inline-block;
     float: left;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 5px;
+    margin-bottom: 30px;
 }
 
-.grid-2-col-rates .item {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    grid-row-end: span 2;
-    background-color: antiquewhite;
+#left-all a {
+    transition: 0.75;
+    color: black;
+
 }
 
-#pic1 {
-    background-image: url(../images/vanveenjf-1127017-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
+#left-all a:hover {
+    color: #777;
+    text-decoration: none;
 }
 
-#pic2 {
-    background-image: url(../images/kimon-maritz-234741-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-#pic3 {
-    background-image: url(../images/willian-justen-de-vasconcellos-443310-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#pic4 {
-    background-image: url(../images/willian-justen-de-vasconcellos-443310-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#pic5 {
-    background-image: url(../images/willian-justen-de-vasconcellos-443310-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#pic6 {
-    background-image: url(../images/willian-justen-de-vasconcellos-443310-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#pic7 {
-    background-image: url(../images/willian-justen-de-vasconcellos-443310-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.name {
-    padding-top: 10px;
-    padding-bottom: 50px;
-    opacity: 0;
-    transition: 0.75s;
-}
-
-.name1 {
-    padding-top: 10px;
-    padding-bottom: 305px;
-    opacity: 0;
-    transition: 0.75s;
-}
-
-.name2 {
-    padding-top: 10px;
-    padding-bottom: 135px;
-    opacity: 0;
-    transition: 0.75s;
-}
-
-.name1:hover,
-.name2:hover,
-.name:hover {
-    color: white;
-    background-image: linear-gradient(to bottom, #40454f, rgba(255, 0, 0, 0));
-    opacity: 1;
-}
-
-.grid-2-col-rates .item-span {
-    width: 100%;
-    height: 100%;
-    grid-column-end: span 2;
-    background-image: url(../images/tim-mossholder-1074115-unsplash.jpg);
-    background-size: cover;
-    text-align: center;
-}
-
-.grid-5-row-rates {
-    width: 100%;
-    height: 500px;
+#rght {
+    justify-content: flex-end;
+    display: flex;
     float: right;
-    display: grid;
-    grid-gap: 5px;
-    grid-template-rows: ifr (repeat, 5);
+    margin-right: 40px;
 }
 
-.grid-5-row-rates .section {
-    width: 100%;
-    height: 100%;
-    background-color: #999;
-    text-align: center;
+.boat-section {
+    text-shadow: 2px 2px 6px #000000;
+    color: white;
+    height: 400px;
+    padding: 100px;
+    margin: 10px 0;
+    transition:0.75s;
+}
+.boat-section:hover{
+     padding-top: 90px;
+}
+
+.boat-section h2 {
+    text-transform: uppercase;
+    transition: 0.25s;
+}
+
+.boat-section p {
+    float: left;
+}
+
+.boat-section ul {
+    list-style-type: square;
+    padding: 15px;
+}
+
+.boat-section ul li {
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+#canoe {
+
+    background-image: url(../images/boats/patrick-hendry-705052-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#kayak {
+    background-image: url(../images/boats/filip-mroz-169103-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#tube {
+    background-image: url(../images/boats/oliver-sjostrom-585649-unsplash%20copy%20copy.png);
+    background-position: center;
+    background-size: cover;
 }
 
 /*for cellphones*/
 @media only screen and (max-width: 480px) {
-   
+
 
     .table-images {
 
         font-size: 0.4em;
 
     }
-     .grid-3-col {
-        grid-template-columns: 1fr;
+
+    .grid-3-col .column p {
+        font-size: 13px;
+        margin: 0 20px;
+    }
+
+    .videoWrapper iframe {
+        height: 300px;
     }
 
 
 }
 
-@media only screen and (max-width: 987.98px) {
+@media only screen and (max-width: 1024px) {
     .carousel-inner i {
         display: none;
     }
 
-    .grid-3-col .column p {
-        font-size: 13px;
+    .contactWrapper input {
+        width: 100%;
     }
+
+    .contactWrapper #comments {
+        width: 100%;
+    }
+
+    .contactWrapper textarea {
+        width: 100%;
+    }
+
+    .boat-section {
+        padding:15%;
+        margin: 0 auto;
+        height: 400px;
+    }
+
 }
 
 
@@ -212,5 +268,23 @@ i:hover {
         font-size: 0.7em;
 
     }
-    
+
+    .grid-3-col {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-3-col .column {
+        margin: 0;
+    }
+
+    .grid-3-col p {
+        margin: 0 80px;
+    }
+
+}
+
+@media only screen and (min-width: 850px) {
+    .boatsBody {
+        margin: 0 15%;
+    }
 }

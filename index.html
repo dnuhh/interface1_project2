@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 
@@ -8,124 +7,173 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Canoeing The Grand</title>
-    <link href="css/alertify.min.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/design.css">
+    <link rel="stylesheet" href="css/design_v.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <!--<link href="css/background.css" rel="stylesheet">-->
 </head>
 
 <body>
+
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 fixed-top">
-            <a href="#" class="navbar-brand"><img src="images/ctgLogo.jpg" width="120px" height="30px"></a>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 fixed-top">
+            <a href="../index.html" class="navbar-brand"><img src="images/homePage/ctgLogo.jpg" width="120px" height="30px"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/tripInformation.html">Trip Infomation</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/rates.html">Trip Rates</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/bookNow.html">Reserve</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">More Info</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tripInformation.html">Trip Information</a></li>
+                    <li class="nav-item"><a class="nav-link" href="boats_info.html">Our Boats</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reserve</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="reservation.html">Personal</a>
+                            <a class="dropdown-item" href="reservation_group.html">Corporation</a>
+                            <a class="dropdown-item" href="reservation_school.html">School</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More Info</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="questions.html">FAQ</a>
+                            <a class="dropdown-item" href="riverSafety.html">Safety</a>
+                            <a class="dropdown-item" href="#">Privacy Policy</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
         </nav>
-    </header>
-    <main role="main">
 
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 fixed-top">
+                <a href="../index.html" class="navbar-brand"><img src="images/homePage/ctgLogo.jpg" width="120px" height="30px"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="tripInformation.html">Trip Information</a></li>
+                        <li class="nav-item"><a class="nav-link" href="boats_info.html">Our Boats</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reserve</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="reservation.html">Personal</a>
+                                <a class="dropdown-item" href="reservation_group.html">Corporation</a>
+                                <a class="dropdown-item" href="reservation_school.html">School</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More Info</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="questions.html">FAQ</a>
+                                <a class="dropdown-item" href="riverSafety.html">Safety</a>
+                                <a class="dropdown-item" href="#">Privacy Policy</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main role="main">
+            <div class="intro-name">
+                <h1>Cannoeing the Grand</h1>
+            </div>
 
-        <div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
+            <div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
 
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-                <li data-target="#demo" data-slide-to="2"></li>
-            </ul>
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
 
-            <!-- The slideshow -->
-            <div class="carousel-inner">
-                <div class="carousel-item active" style="height: 100vh">
-                    <img src="images/homeIMG4.jpg" class="img-fluid" style="min-height: 140%; min-width:1600px; filter:brightness(70%)">
-                    <div class="carousel-caption well">
-                        <div class="container well" align="center">
-                            <h2 style="text-transform: uppercase;">Get on the Grand today</h2>
-                            <p class="well">Enjoy a lovely trip down the grand</p>
+                <!-- The slideshow -->
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="height: 100vh">
+                        <img src="images/images_home__/home_1.jpg" class="img-fluid" style="min-height: 140%; min-width:1600px; filter:brightness(70%)">
+                        <div class="carousel-caption well">
+                            <div class="container well" align="center">
+                                <h2>Get on the Grand today</h2>
+                                <p class="well">Enjoy a lovely trip down the grand</p>
+                                <a href="#information"> <i class="fas fa-arrow-down"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height: 100vh">
+                        <img src="images/images_home__/home_2.jpg" class="img-fluid" style="min-height: 140%; min-width:1600px; filter:brightness(50%)">
+                        <div class="carousel-caption well">
+                            <h2>Enjoy the beautiful scenery</h2>
+                            <p>It's easy, fun and a great way to spend a summer the day</p>
                             <a href="#information"> <i class="fas fa-arrow-down"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item" style="height: 100vh">
-                    <img src="images/homeIMG2.jpg" class="img-fluid" style="min-height: 140%; min-width:1600px; filter:brightness(70%)">
-                    <div class="carousel-caption well">
-                        <h2 style="text-transform: uppercase;">Enjoy the beautiful scenery</h2>
-                        <p>It's easy, fun and a great way to spend a summer the day</p>
-                       <a href="#information"> <i class="fas fa-arrow-down"></i></a>
+                    <div class="carousel-item" style="height: 100vh">
+                        <img src="images/images_home__/home_3.jpg" class="img-fluid" style="min-height: 140%; min-width:1600px; filter:brightness(70%)">
+                        <div class="carousel-caption well">
+                            <h2>Bring Friends</h2>
+                            <p>We can accommodate groups of all sizes<p>
+                                    <a href="#information"> <i class="fas fa-arrow-down"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item" style="height: 100vh">
-                    <img src="images/homeIMG3.jpg" class="img-fluid" style="min-height: 140%; min-width:1600px; filter:brightness(70%)">
-                    <div class="carousel-caption well">
-                        <h2 style="text-transform: uppercase;">Bring Friends</h2>
-                        <p>We can accommodate groups of all sizes<p>
-                       <a href="#information"> <i class="fas fa-arrow-down"></i></a>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+
+            <section id="information">
+
+                <div class="embed-responsive embed-responsive-21by9"><iframe src="https://www.youtube.com/embed/WteZwxsvICc?controls=0&amp&autoplay=1&mute=1;start=9" frameborder="0" allowfullscreen></iframe></div>
+
+                <div class="grid-3-col">
+                    <div class="column">
+                        <div class="icon"> <img src="images/images_home__/icon_river.png"></div>
+                        <h2>About Us</h2>
+                        <hr>
+                        <p> Canoeing The Grand is ideally situated on the banks of the Grand River. Our trips offer a range of opportunities for both the novice paddler and to those wanting a more vigorous outing.</p>
                     </div>
+
+                    <div class="column">
+                        <div class="icon"> <img src="images/images_home__/icon_boat.png"></div>
+                        <h2>Get on Boat</h2>
+                        <hr>
+                        <p>Our shuttles will drive you and our boats up north along the river. From there you will begin your journey back down south to our location. </p>
+                    </div>
+                    <div class="column">
+                        <div class="icon"> <img src="images/images_home__/icon_mountain.png"></div>
+                        <h2>unique event</h2>
+                        <hr>
+                        <p> A day of paddling is a wonderful way to show your appreciation to provide your group with a retreat type experience. We have a picnic area available by reservation and will work with you to create an unforgettable trip.
+                        </p>
+                    </div>
+
                 </div>
-            </div>
 
-            <!-- Left and right controls -->
-            <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-        </div>
-
-<section id="information">
-
-        <div class="viedoWrapper"><iframe width="100%" ; height="600px" src="https://www.youtube.com/embed/WteZwxsvICc?controls=0&amp&autoplay=1&mute=1;start=9" frameborder="0" allowfullscreen></iframe></div>
-
-        <div class="grid-3-col">
-            <div class="column">
-               <div class="icon"> <img src="images/icon_river.png"></div>
-                <h2>Reserve</h2><br>
-                <hr>
-                <p> Canoeing The Grand is ideally situated on the banks of the Grand River. Our trips offer a range of opportunities for both the novice paddler and to those wanting a more vigorous outing.</p>
-            </div>
-      
-            <div class="column">
-               <div class="icon"> <img src="images/icon_boat.png"></div>
-                <h2>Get on Boat</h2><br>
-                <hr>
-                <p>Our shuttles will drive you and our boats up north along the river. From there you will begin your journey back down south to our location. </p>
-            </div>
-             <div class="column">
-           <div class="icon"> <img src="images/icon_mountain.png"></div>
-            <h2>unique event</h2><br>
-            <hr>
-            <p> A day of paddling is a wonderful way to show your appreciation to provide your group with a retreat type experience. We have a picnic area available by reservation and will work with you to create an unforgettable trip.
-            </p>
-              </div>
-      
-          </div>
-          
-          </section>
-        <a href="pages/login.html">Employee</a>
-    </main>
-    <!-- Bootstrap core JavaScript
+            </section>
+            <a href="login.html">Employee</a>
+        </main>
+        <!-- Bootstrap core JavaScript
         ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.js"></script>
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.js"></script>
 </body>
 
-    
+
 <script>
-    
     'undefined' === typeof _trfq || (window._trfq = []);
     'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({
         'tccl.baseHost': 'secureserver.net'
@@ -138,144 +186,3 @@
 <script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script>
 
 </html>
-
-<!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Canoeing The Grand</title>
-    <link href="css/alertify.min.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/design.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <!--<link href="css/background.css" rel="stylesheet">-->
-</head>
-
-<body>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 fixed-top">
-            <a href="#" class="navbar-brand"><img src="images/ctgLogo.jpg" width="120px" height="30px"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/tripInformation.html">Trip Infomation</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/rates.html">Trip Rates</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/bookNow.html">Reserve</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">More Info</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main role="main">
-
-
-        <div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
-
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-                <li data-target="#demo" data-slide-to="2"></li>
-            </ul>
-
-            <!-- The slideshow -->
-            <div class="carousel-inner">
-                <div class="carousel-item active" style="height: 100vh">
-                    <img src="images/homeIMG4.jpg" class="img-fluid" style="min-height: 140%; min-width:1600px; filter:brightness(70%)">
-                    <div class="carousel-caption well">
-                        <div class="container well" align="center">
-                            <h2 style="text-transform: uppercase;">Get on the Grand today</h2>
-                            <p class="well">Enjoy a lovely trip down the grand</p>
-                            <a href="#information"> <i class="fas fa-arrow-down"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item" style="height: 100vh">
-                    <img src="images/homeIMG2.jpg" class="img-fluid" style="min-height: 140%; min-width:1600px; filter:brightness(70%)">
-                    <div class="carousel-caption well">
-                        <h2 style="text-transform: uppercase;">Enjoy the beautiful scenery</h2>
-                        <p>It's easy, fun and a great way to spend a summer the day</p>
-                       <a href="#information"> <i class="fas fa-arrow-down"></i></a>
-                    </div>
-                </div>
-                <div class="carousel-item" style="height: 100vh">
-                    <img src="images/homeIMG3.jpg" class="img-fluid" style="min-height: 140%; min-width:1600px; filter:brightness(70%)">
-                    <div class="carousel-caption well">
-                        <h2 style="text-transform: uppercase;">Bring Friends</h2>
-                        <p>We can accommodate groups of all sizes<p>
-                       <a href="#information"> <i class="fas fa-arrow-down"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Left and right controls -->
-            <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-        </div>
-
-<section id="information">
-
-        <div class="viedoWrapper"><iframe width="100%" ; height="600px" src="https://www.youtube.com/embed/WteZwxsvICc?controls=0&amp&autoplay=1&mute=1;start=9" frameborder="0" allowfullscreen></iframe></div>
-
-        <div class="grid-3-col">
-            <div class="column">
-               <div class="icon"> <img src="images/icon_river.png"></div>
-                <h2>Reserve</h2><br>
-                <hr>
-                <p> Canoeing The Grand is ideally situated on the banks of the Grand River. Our trips offer a range of opportunities for both the novice paddler and to those wanting a more vigorous outing.</p>
-            </div>
-      
-            <div class="column">
-               <div class="icon"> <img src="images/icon_boat.png"></div>
-                <h2>Get on Boat</h2><br>
-                <hr>
-                <p>Our shuttles will drive you and our boats up north along the river. From there you will begin your journey back down south to our location. </p>
-            </div>
-             <div class="column">
-           <div class="icon"> <img src="images/icon_mountain.png"></div>
-            <h2>unique event</h2><br>
-            <hr>
-            <p> A day of paddling is a wonderful way to show your appreciation to provide your group with a retreat type experience. We have a picnic area available by reservation and will work with you to create an unforgettable trip.
-            </p>
-              </div>
-      
-          </div>
-          
-          </section>
-        <a href="pages/login.html">Employee</a>
-    </main>
-    <!-- Bootstrap core JavaScript
-        ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.js"></script>
-</body>
-
-    
-<script>
-    
-    'undefined' === typeof _trfq || (window._trfq = []);
-    'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({
-        'tccl.baseHost': 'secureserver.net'
-    }), _trfd.push({
-        'ap': 'cpsh'
-    }, {
-        'server': 'a2plcpnl0893'
-    }) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.
-</script>
-<script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script>
-
-</html>
-

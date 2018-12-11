@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,14 +24,26 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Home </a></li>
-                    <li class="nav-item active"><a class="nav-link" href="tripInformation.html">Trip Info</a></li>
-                    <li class="nav-item"><a class="nav-link" href="rates.html"> Rates</a></li>
-                    <li class="nav-item"><a class="nav-link" href="reservation.html">Reserve</a></li>
-                    <li class="nav-item"><a class="nav-link" href="reservation_group.html">Reserve Group</a></li>
-                    <li class="nav-item"><a class="nav-link" href="reservation_school.html">Reserve School</a></li>
-                    <li class="nav-item"><a class="nav-link" href="groupInformation.html">More Info</a></li>
-
+                    <li class="nav-item "><a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="tripInformation.html">Trip Information</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rates.html">Our Boats</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reserve</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item active" href="reservation.html">Personal</a>
+                            <a class="dropdown-item" href="reservation_group.html">Corporation</a>
+                            <a class="dropdown-item" href="reservation_school.html">School</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More Info</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="questions.html">FAQ</a>
+                            <a class="dropdown-item" href="riverSafety.html">Safety</a>
+                            <a class="dropdown-item" href="#">Privacy Policy</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
         </nav>
@@ -141,9 +154,11 @@
                             <option value="nineam">9:00 AM</option>
                             <option value="tenam">10:00 AM</option>
                             <option value="elevenam">11:00 AM</option>
+
                             <option value="elevenam">12:00 PM</option>
                             <option value="elevenam">1:00 PM</option>
                             <option value="elevenam">2:00 PM</option>
+
                         </select>
 
                         to
@@ -156,6 +171,7 @@
                             <option value="elevenam">12:00 PM</option>
                             <option value="elevenam">1:00 PM</option>
                             <option value="elevenam">2:00 PM</option>
+
                         </select>
                     </div>
                     <br>
@@ -219,5 +235,5 @@
         'server': 'a2plcpnl0893'
     }) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.
 </script>
-<script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script></html>
-
+<script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script>
+</html>

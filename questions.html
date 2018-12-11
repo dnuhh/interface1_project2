@@ -1,157 +1,144 @@
-
-
-
-
-
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Canoeing The Grand</title>
-    <link href="../interface1_project2/css/alertify.min.css" rel="stylesheet">
-    <link href="../interface1_project2/css/bootstrap.css" rel="stylesheet">
-    <link href="../interface1_project2/css/background.css" rel="stylesheet">
-    <link href="../interface1_project2/css/design.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tripInfo_design.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/alertify.min.css" rel="stylesheet">
+    <link href="css/accordion.css" rel="stylesheet">
+    
 </head>
+
 <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 fixed-top">
-        <a href="../index.html" class="navbar-brand"><img src="../interface1_project2/images/homePage/ctgLogo.jpg" width="120px" height="30px"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="tripInformation.html">Trip Info</a></li>
-                <li class="nav-item"><a class="nav-link" href="rates.html"> Rates</a></li>
-                <li class="nav-item"><a class="nav-link" href="bookNow.html">Reserve</a></li>
-                <li class="nav-item active"><a class="nav-link" href="groupInformation.html">More Info</a></li>
-        
-            </ul>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 fixed-top">
+            <a href="../index.html" class="navbar-brand"><img src="../images/homePage/ctgLogo.jpg" width="120px" height="30px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="tripInformation.html">Trip Info</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rates.html">Our Boats</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reserve</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="reservation.html">Personal</a>
+                            <a class="dropdown-item" href="reservation_group.html">Corporation</a>
+                            <a class="dropdown-item" href="reservation_school.html">School</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More Info</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item active" href="questions.html">FAQ</a>
+                            <a class="dropdown-item" href="riverSafety.html">Safety</a>
+                            <a class="dropdown-item" href="#">Privacy Policy</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <div class="container well" style="margin-top: 80px">
-
-
-
-
-
-
 
         <h1 class="featurette-heading">Frequently Asked Questions</h1>
 
         <hr class="featurette-divider">
 
-
-
-
-        <div class="list-group">
-            <h4 class="list-group-item-heading">How It Works</h4>
+        <button class="accordion"><h5 class="list-group-item-heading">How It Works</h5></button>
+        <div class="panel">
             <p class="list-group-item-text">You begin at our location at (3734 King Street East) where you park your vehicle and sign in. We shuttle you north up river with our boats, and you paddle/tube back down south to our location where you parked your vehicle.</p>
+        </div>
 
-
-            <h4 class="list-group-item-heading">Where do we start?</h4>
+        <button class="accordion"><h5 class="list-group-item-heading">Where do we start?</h5></button>
+        <div class="panel">
             <p class="list-group-item-text">You start at our location by the Freeport Bridge, at 3734 King Street East, Kitchener Ontario.</p>
+        </div>
 
-
-            <h4 class="list-group-item-heading">Where do we finish?</h4>
+        <button class="accordion"><h5 class="list-group-item-heading">Where do we finish?</h5></button>
+        <div class="panel">
             <p class="list-group-item-text">You paddle/tube back downstream to our location by the Freeport Bridge, at 3734 King Street East, where you began your trip and you enter your vehicle and take off.</p>
-
-
-            <h4 class="list-group-item-heading">Where do we park?</h4>
+        </div>
+        <button class="accordion"><h5 class="list-group-item-heading">Where do we park?</h5></button>
+        <div class="panel">
             <p class="list-group-item-text">We have parking on site at our location, free of charge while you are on the Grand using our service.</p>
-
-
-
-            <h4 class="list-group-item-heading">When are our trip times?</h4>
+        </div>
+        <button class="accordion"><h5 class="list-group-item-heading">When are our trip times?</h5></button>
+        <div class="panel">
             <p class="list-group-item-text">
                 Our shuttles run on the hour in the mornings at 08:00 AM, 09:00 AM, 10:00 AM, 11:00 AM, 12:00 PM and on the half hour in the afternoon
                 at 1:30 PM, 02:30 PM, 03:30 PM and 04:30 PM
             </p>
-
-
-
-            <h4 class="list-group-item-heading">How long do we have?</h4>
+        </div>
+        <button class="accordion"><h5 class="list-group-item-heading">How long do we have?</h5></button>
+        <div class="panel">
             <p class="list-group-item-text">
                 No matter what time you go out at, you just have to be back by 06:00 PM, the cost of the trip remains the same. We recommend
                 those going out to fish or those that would like to picnic for a long time to go out on earlier trips to have the entire day on the Grand.
             </p>
-
-
-
-            <h4 class="list-group-item-heading">Which trip do you recommend?</h4>
+        </div>
+        <button class="accordion"><h5 class="list-group-item-heading">Which trip do you recommend?</h5></button>
+        <div class="panel">
             <p class="list-group-item-text">
                 We recommend the Breslau trip for all first time paddlers, as it is a fairly easy paddle and gives you sometime to experience
                 and take in the Grand River
             </p>
-
-
-
-            <h4 class="list-group-item-heading">Do you provide equipment?</h4>
+        </div>
+        <button class="accordion"><h5 class="list-group-item-heading">Do you provide equipment?</h5></button>
+        <div class="panel">
             <p class="list-group-item-text">Yes we provide paddles, life jackets and a safety kit along with your boat .</p>
-
-
-
-            <h4 class="list-group-item-heading">Do you need experience?</h4>
+        </div>
+        <button class="accordion"><h5 class="list-group-item-heading">Do you need experience?</h5></button>
+        <div class="panel">
             <p class="list-group-item-text">
                 You do not need experience, the Grand River is a fairly easy paddle and we provide instructions on how to paddle it
                 when you arrive at your drop off destination.
             </p>
-
-
-            <h4 class="list-group-item-heading">How long does tubing take?</h4>
+        </div>
+        <button class="accordion"><h5 class="list-group-item-heading">How long does tubing take?</h5></button>
+        <div class="panel">
             <p class="list-group-item-text">
                 Tubing is only offered from Otterbein at noon and takes approximately four hours to complete as you go with
                 the flow of the current.
             </p>
-
-
-            <h4 class="list-group-item-heading">Do we need to book online?</h4>
+        </div>
+        <button class="accordion"><h5 class="list-group-item-heading">Do we need to book online?</h5></button>
+        <div class="panel">
             <p class="list-group-item-text">
                 You do not need to book online, however we highly recommend it to have your spot reserved for you
                 in the event that we are booked up we will take those with reservations first, however we do accept walk-ins.
             </p>
-
-
-
-            <h4 class="list-group-item-heading">What type of boats do you have?</h4>
+        </div>
+        <button class="accordion"><h5 class="list-group-item-heading">What type of boats do you have?</h5></button>
+        <div class="panel">
             <p class="list-group-item-text">We have canoes, kayaks, tandem kayaks and tubes at Canoe the Grand.</p>
+        </div>
 
-
-
-            <h4 class="list-group-item-heading">Can we bring our own canoes or kayaks?</h4>
+        <button class="accordion"><h5 class="list-group-item-heading">Can we bring our own canoes or kayaks?</h5></button>
+        <div class="panel">
             <p class="list-group-item-text">
                 Yes you may, however you will only save $20.00, it is not recommended that you bring
                 your own boat as our boats are designed to take a beating from the rocks on the Grand and personal boats tend to be less dense.
             </p>
+        </div>
 
-
-
-            <h4 class="list-group-item-heading">How many people fit in a canoe?</h4>
+        <button class="accordion"><h5 class="list-group-item-heading">How many people fit in a canoe?</h5></button>
+        <div class="panel">
             <p class="list-group-item-text">
                 It is recommended that you go two to a canoe as the Grand River is fairly shallow and too much weight can
                 cause you to hit the bottom more often, but you can fit two adults and two small children at max.
             </p>
-
-
-
-
-
-
-
         </div>
-
-
-
     </div>
-
-
-
-
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -160,9 +147,32 @@
     <script src="../js/popper.js"></script>
     <script src="../js/bootstrap.js"></script>
 </body>
-<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'a2plcpnl0893'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script></html>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
 
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+<script>
+    'undefined' === typeof _trfq || (window._trfq = []);
+    'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({
+        'tccl.baseHost': 'secureserver.net'
+    }), _trfd.push({
+        'ap': 'cpsh'
+    }, {
+        'server': 'a2plcpnl0893'
+    }) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.
+</script>
+<script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script>
 
-
-
-
+</html>
