@@ -1,45 +1,61 @@
-body{
+body {
     width: 100%;
     margin: 0;
     padding: 0;
     line-height: 1.6em;
     font-family: 'Roboto', sans-serif;
 }
-.info{
-    margin: 100px 10% 0 ;
+
+.info {
+    margin: 100px 10% 0;
     padding: 0;
     height: auto;
 }
-h1, h2, h3{
+
+h1,
+h2,
+h3 {
     text-transform: uppercase;
 }
-h3, h4, h5{
-    margin: 0;
-    padding: 0;
-}
-.tripDetails{
-    height: auto;
-    margin: 0;
-    padding: 0;
-}
-.boatDetails{
 
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
 }
-.boatDetails .cell{
+
+.tripDetails {
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.boatDetails {}
+
+.boatDetails .cell {
     height: auto;
 }
-.grid-3-col{
+
+.grid-3-col {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px 7px;
     margin: 0;
     height: auto;
 }
-
-.cell{
+.grid-4-col {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px 7px;
+    margin: 0;
+    height: auto;
+}
+.cell {
     transition: all 0.8s;
 }
-.tripTab{
+
+.tripTab {
     margin: 10px 0 0 0;
     padding: 0 15%;
     transition: all 0.5s;
@@ -48,67 +64,76 @@ h3, h4, h5{
     color: #fff;
     transition: all 0.8s;
 }
-.tripTab:hover .tripBasicInfo{
+
+.tripTab:hover .tripBasicInfo {
     padding-top: 10px;
 }
-.textBox{
-    display: none;
-    background: rgb(220,220,220);
-    margin: 0 0 10px 0;
-    padding: 20px 15%;
-    height: 500px;
-}
-.brief{
+
+.brief {
     width: 60%
 }
-.cell .tripBasicInfo{
+
+.cell .tripBasicInfo {
     display: block;
     margin: auto 0;
 }
-.map{
+
+.map {
     grid-column-end: span 3;
 }
-.map iframe{
+
+.map iframe {
     width: 100%;
 }
-.tripMap{
+
+.tripMap {
     grid-column-end: span 2;
     float: ;
 }
-.tripMapText{
+
+.tripMapText {
     float: left;
     margin: 0 20px;
 }
-.tripMap img{
+
+.tripMap img {
     float: right;
     padding: 0 20px;
-    box-shadow: rgba(220,220,220,0.5) 5px 5px;
+    box-shadow: rgba(220, 220, 220, 0.5) 5px 5px;
 }
-.tripName{
+
+.tripName {
     font-size: 34px;
 }
-.summary{
+
+.summary {
     font-size: 18px;
     margin: 8px 0;
 }
-.tripBasicInfo{
+
+.tripBasicInfo {
     transition: all 0.8s;
 }
-.tripBasicInfo p{
-     display: inline;
+
+.tripBasicInfo p {
+    display: inline;
     font-size: 13px;
     font-weight: 700;
 }
-.beg{
+
+.beg {
     color: rgb(11, 191, 17);
 }
-.inter{
+
+.inter {
     color: rgb(229, 180, 22);
 }
-.adv{
+
+.adv {
     color: rgb(214, 6, 6);
 }
-.legend{
+
+.legend {
     clear: both;
     display: grid;
     margin: 0;
@@ -117,17 +142,19 @@ h3, h4, h5{
     font-size: 14px;
     width: 300px;
     padding: 10px;
-    border: 2px solid rgb(220,220,220);
+    border: 2px solid rgb(220, 220, 220);
     float: right;
 }
-.legend i{
+
+.legend i {
     display: block;
     float: left;
     width: 15px;
     margin: 0 6px;
     padding: 0;
 }
-.legend p{
+
+.legend p {
     display: inline-block;
     font-size: 13px;
     padding: 0;
@@ -135,52 +162,119 @@ h3, h4, h5{
     float: left;
 }
 
-hr{
+hr {
     clear: both;
 }
-.locHead{
+
+.locHead {
     margin-top: 15px;
 }
-#ottCK{
+.linksGrid{
+    margin: 10px;
+    width: 700px;
+}
+.links a{
+    transition: all 0.5s;
+}
+.links a{
+    color: #45729E;
+    text-decoration: none;
+}
+.links a:hover{
+    color: #233065;
+}
+.links a i{
+    font-size: 40px;
+}
+.link{
+    text-align: center;
+}
+
+#ottCK {
     background: url(../images/tripInformation/sayan-nath-176078-unsplash.jpg)center center no-repeat;
     background-size: cover;
     background-position: bottom;
 }
-#ottT{
+
+#ottT {
     background: url(../images/tripInformation/deva-darshan-598625-unsplash.jpg)center center no-repeat;
     background-size: cover;
     background-position: right;
 }
-#bresCK{
+
+#bresCK {
     background: url(../images/tripInformation/mike-bowman-723670-unsplash.jpg)center center no-repeat;
     background-size: cover;
     background-position: 50% 75%;
 }
-#kfCK{
+
+#kfCK {
     background: url(../images/tripInformation/geran-de-klerk-307491-unsplash.jpg)center center no-repeat;
     background-size: cover;
     background-position: ;
 
 }
-#conCK{
+
+#conCK {
     background: url(../images/tripInformation/riccardo-chiarini-263999-unsplash.jpg)center center no-repeat;
     background-size: cover;
     background-position: ;
 }
-#wmCK{
+
+#wmCK {
     background: url(../images/tripInformation/theo-roland-395928-unsplash.jpg)center center no-repeat;
     background-size: cover;
     background-position: right;
 }
-#blairCK{
+
+#blairCK {
     background: url(../images/tripInformation/thomas-griesbeck-559651-unsplash.jpg)center center no-repeat;
     background-size: cover;
     background-position: right;
 
 }
-#rbCK{
+
+#rbCK {
     background: url(../images/tripInformation/marko-balazic-253377-unsplash.jpg)center center no-repeat;
     background-size: cover;
     background-position: 50% 65%;
 }
 
+@media only screen and (max-width: 1024px) {
+    .info {
+        padding: 100px 0;
+        margin: 0 5%;
+    }
+
+    .brief {
+        width: 70%;
+    }
+
+    .legend {
+        width: 150px;
+    }
+
+    .difficulty {
+        grid-column-end: span 2;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .info {
+        padding: 70px 0;
+        margin: 0 5%;
+    }
+    .brief {
+        width: 100%;
+    }
+
+    .legend {
+        width: 100%;
+    }
+
+    .difficulty {
+        grid-column-end: span 1;
+    }
+
+
+}
