@@ -153,6 +153,7 @@ h5 {
 
 .tripBasicInfo {
     transition: all 0.8s;
+    text-shadow: 2px 2px 6px #000000;
 }
 
 .tripBasicInfo p {
