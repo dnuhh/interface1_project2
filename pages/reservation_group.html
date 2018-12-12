@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +8,16 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="../css/design_reserve.css">
-    <link rel="stylesheet" href="css/navigation.css">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-    <title>Reservations</title>
+    <title>Group Reservations</title>
 </head>
 
 <body>
-    <header>
+       <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 fixed-top">
             <a href="../index.html" class="navbar-brand"><img src="../images/homePage/ctgLogo.jpg" width="120px" height="30px"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,14 +25,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item "><a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="tripInformation.html">Trip Information</a></li>
                     <li class="nav-item"><a class="nav-link" href="boats_info.html">Our Boats</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle  active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reserve</a>
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reserve</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item active" href="reservation.html">Personal</a>
-                            <a class="dropdown-item" href="reservation_group.html">Corporation</a>
+                            <a class="dropdown-item" href="reservation.html">Personal</a>
+                            <a class="dropdown-item  active" href="reservation_group.html">Corporation</a>
                             <a class="dropdown-item" href="reservation_school.html">School</a>
                         </div>
                     </li>
@@ -51,10 +50,8 @@
         </nav>
     </header>
     <div class="header">
-        <h1>Reserve</h1>
-        <p>Book your next trip in 5 simple steps! <br>
-            Or by giving us a direct call at (519)-896-0290 / 1-877-868- 0290 to contact our office. <br>
-            If you have any questions, comments or concerns, give us an email at our contact form her</p>
+        <h1>Group Reservation</h1>
+        <p>Please submit this form if you are a large group or a corporation, we will respond within 24 hours to follow up with you reservation request.</p>
     </div>
     <br>
     <div class="reservationFields">
@@ -63,31 +60,62 @@
             <div class="grid-4-col">
                 <div class="cell1">
                     <form>
-                        First Name:<br>
-                        <input type="text" name="firstname" placeholder="First Name"><br><br>
-                        Last Name:<br>
-                        <input type="text" name="lastname" placeholder="Last Name"><br><br>
-                        Email Address:<br>
+                        Organization/Group Name:<br>
+                        <input type="text" name="groupname" placeholder="Group Name"><br><br>
+                        Contact Name:<br>
+                        <input type="text" name="contactname" placeholder="Contact Name"><br><br>
+                        Contact Email Address:<br>
                         <input type="text" name="email" placeholder="Email"><br><br>
-                        Phone Number:<br>
+                        Contact Phone Number:<br>
                         <input type="text" name="phonenumber" placeholder="Phone Number"><br><br>
-                        Home Address:<br>
-                        <input type="text" name="address" placeholder="Home Address"><br><br>
+                        Phone Extension:<br>
+                        <input type="text" name="ext" placeholder="Phone Extension"><br><br>
+                        Organization/Group Address:<br>
+                        <input type="text" name="groupaddress" placeholder="Group Address"><br><br>
                         Country:<br>
                         <input type="text" name="country" placeholder="Country"><br><br>
                         City:<br>
                         <input type="text" name="city" placeholder="City"><br><br>
                         Postal Code:<br>
                         <input type="text" name="postalcode" placeholder="Postal Code"><br><br>
-                        How many people are in your group in total?:<br>
+                        How many people are in your group (including children?:<br>
                         <input type="text" name="numbergroup" placeholder="0"><br><br>
-                        Number of people in your group that are children (age 3 to 12):<br>
-                        <input type="text" name="groupchildren" placeholder="0"><br><br>
+
+                        Select a Trip
+                        <select>
+                            <option value="Breslau">Breslau</option>
+                            <option value="Otterbein">Otterbein</option>
+                            <option value="Kaufman">Kaufman's Flats</option>
+                            <option value="Conestogo">Conestogo</option>
+                            <option value="WestMontrose">West Montrose</option>
+                            <option value="Blair">Blair</option>
+                            <option value="Riverbluff">Riverbluffs Park</option>
+                        </select>
+                        <br><br>
+
+                        How many canoes?:<br>
+                        <input type="text" name="numbercanoe" placeholder="0"><br><br>
+
                         Is this your first trip with us?<br>
                         <input type="radio" name="firsttrip" value="yes" checked> Yes<br>
-                        <input type="radio" name="firsttrip" value="no"> No<br>
-                        <br><br>
-                       
+                        <input type="radio" name="firsttrip" value="no"> No<br><br>
+
+                        Does your group require a guide on your trip?<br>
+                        <input type="radio" name="guide" value="yes" checked> Yes<br>
+                        <input type="radio" name="guide" value="no"> No<br><br>
+
+                        Does your group require transportation to Canoe The Grand?<br>
+                        <input type="radio" name="trans" value="yes" checked> Yes<br>
+                        <input type="radio" name="trans" value="no"> No<br><br>
+
+
+                        Does your group require lunch after your trip?<br>
+                        <input type="radio" name="lunch" value="yes" checked> Yes<br>
+                        <input type="radio" name="lunch" value="no"> No<br><br>
+
+
+
+                      
                     </form>
                 </div>
 
@@ -96,7 +124,7 @@
                         <ul>
                             <li class="prev">&#10094;</li>
                             <li class="next">&#10095;</li>
-                            <li>October<br>2018</li>
+                            <li>October<br><span style="font-size:18px">2018</span></li>
                         </ul>
                     </div>
 
@@ -142,9 +170,6 @@
                         <li>29</li>
                         <li>30</li>
                         <li>31</li>
-
-
-
                     </ul>
                 </div>
 
@@ -156,11 +181,9 @@
                             <option value="nineam">9:00 AM</option>
                             <option value="tenam">10:00 AM</option>
                             <option value="elevenam">11:00 AM</option>
-
                             <option value="elevenam">12:00 PM</option>
                             <option value="elevenam">1:00 PM</option>
                             <option value="elevenam">2:00 PM</option>
-
                         </select>
 
                         to
@@ -173,7 +196,6 @@
                             <option value="elevenam">12:00 PM</option>
                             <option value="elevenam">1:00 PM</option>
                             <option value="elevenam">2:00 PM</option>
-
                         </select>
                     </div>
                     <br>
@@ -182,13 +204,16 @@
                         online system only allows for bookings in advance
                         !</p>
                 </div>
-
-                <div class="cell4">
-                    <input type="submit" value="Submit">
-                    <a href="reservation.html">Reset Fields</a>
+                <div class="cell5">
+                    Question, Comments, or Concerns?
+                    <textarea rows="4" cols="50" name="comment" form="usrform" placeholder="Question, Comments, or Concerns..."> </textarea>
                 </div>
-
+                <div class="cell6">
+                    <input type="submit" value="Submit">
+                    <a href="reservation_group.html">Reset Fields</a>
+                </div>
             </div>
+
         </div>
     </div>
 
@@ -198,7 +223,7 @@
 
     <div class="footer">
         <div class="item1">
-            <i class="fas fa-map-marker-alt"></i>Located at the Freeport Bridge 3734 King Street East. <br> Kitchener, Ontario N2P 2G5
+            <i class="fas fa-map-marker-alt"></i>Located at the Freeport Bridge 3734 King Street East. Kitchener, Ontario N2P 2G5
         </div>
         <div class="item2">
             <i class="fas fa-phone"></i>(519) 896-0290 / 1-877-896-0290
@@ -217,9 +242,6 @@
         </div>
     </div>
 
-
-
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -237,5 +259,4 @@
         'server': 'a2plcpnl0893'
     }) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.
 </script>
-<script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script>
-</html>
+<script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script></html>
