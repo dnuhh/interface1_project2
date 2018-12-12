@@ -102,7 +102,15 @@ h5 {
     display: inline-block;
     font-size: 13px;
 }
+.full a {
+    color: #8d8680;
+    text-decoration: none;
+}
 
+.full a:hover {
+    color: #4f4b47;
+    text-decoration: none;
+}
 
 .value {
     text-align: right;
