@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6em;
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, sans-serif;
 }
 
 .info {
@@ -36,14 +36,15 @@ h5 {
 .boatDetails .cell {
     height: auto;
 }
-.grid-2-col{
+
+.grid-2-col {
     display: grid;
     grid-template-columns: 60% 40%;
     grid-gap: 5px;
     margin: 0;
-    padding: 5px 0; 
+    padding: 5px 0;
     height: auto;
-    
+
 }
 
 .grid-3-col {
@@ -64,17 +65,19 @@ h5 {
 }
 
 .grid-2-col .cell {
-    background: #fff;
-        padding: 10px;
+    background: rgb(220, 220, 220);
+    padding: 15px;
 }
 
-.prices{
-    
+.times {
+
     grid-row-end: span 2;
 }
-.extraInfo{
-    grid-column-end: span 2; 
+
+.extraInfo {
+    grid-column-end: span 2;
 }
+
 .brief {
     width: 60%
 }
@@ -82,6 +85,27 @@ h5 {
 .cell .tripBasicInfo {
     display: block;
     margin: auto 0;
+}
+
+.extraInfo q {}
+
+.half p {
+    margin: 0;
+    width: 49%;
+    display: inline-block;
+}
+
+.full p {
+    padding-top: 10px;
+    margin: 0;
+    width: 100%;
+    display: inline-block;
+    font-size: 13px;
+}
+
+
+.value {
+    text-align: right;
 }
 
 .info ul {
@@ -118,8 +142,12 @@ h5 {
     font-size: 34px;
 }
 
+#shrink {
+    width: 70%;
+}
+
 .summary {
-    font-size: 18px;
+    font-size: 14px;
     margin: 8px 0;
 }
 
@@ -262,7 +290,11 @@ hr {
 @media only screen and (max-width: 1024px) {
     .info {
         padding: 100px 0;
-        margin: 0 5%;
+        margin: 0;
+    }
+
+    .pgText {
+        padding: 0 5%;
     }
 
     .brief {
@@ -284,12 +316,19 @@ hr {
     .link {
         grid-column-end: span 2;
     }
+
+    .description .cell {
+        grid-column-end: span 2;
+    }
+
+    #shrink {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 480px) {
     .info {
         padding: 70px 0;
-        margin: 0 5%;
     }
 
     .brief {
