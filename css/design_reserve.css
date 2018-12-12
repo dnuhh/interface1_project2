@@ -14,7 +14,7 @@ h3 {
 }
 
 .header {
-    margin: 100px 10% 70px;
+    margin: 100px 10% 30px;
 }
 
 .reservationFields {
@@ -302,7 +302,7 @@ h3 {
 
 
     .header {
-        margin: 20% 5% 50px;
+        margin: 20% 5% 0;
     }
 
     .header h1 {
