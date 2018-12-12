@@ -36,6 +36,15 @@ h5 {
 .boatDetails .cell {
     height: auto;
 }
+.grid-2-col{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 5px;
+    margin: 0;
+    padding: 5px 0; 
+    height: auto;
+    
+}
 
 .grid-3-col {
     display: grid;
@@ -54,24 +63,18 @@ h5 {
     background: #fff;
 }
 
-.cell {
-    transition: all 0.8s;
+.grid-2-col .cell {
+    background: #fff;
+        padding: 10px;
 }
 
-.tripTab {
-    margin: 10px 0 0 0;
-    padding: 0 15%;
-    transition: all 0.5s;
-    height: 300px;
-    display: grid;
-    color: #fff;
-    transition: all 0.8s;
+.prices{
+    
+    grid-row-end: span 2;
 }
-
-.tripTab:hover .tripBasicInfo {
-    padding-top: 10px;
+.extraInfo{
+    grid-column-end: span 2; 
 }
-
 .brief {
     width: 60%
 }
@@ -189,12 +192,12 @@ hr {
 }
 
 .links a {
-    color: #45729E;
+    color: #8d8680;
     text-decoration: none;
 }
 
 .links a:hover {
-    color: #233065;
+    color: #4f4b47;
 }
 
 .links a i {
