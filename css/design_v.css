@@ -1,5 +1,4 @@
-*{ font-family: 'Open Sans', sans-serif;
-}
+
 .intro-name {
     width: 100%;
     position: absolute;
@@ -179,7 +178,6 @@ button:hover {
 }
 
 .boat-section h2 {
-    text-transform: uppercase;
     transition: 0.25s;
 }
 
