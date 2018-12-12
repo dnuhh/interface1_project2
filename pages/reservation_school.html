@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <link rel="stylesheet" href="../css/design_reserve.css">
-    <link rel="stylesheet" href="css/navigation.css">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/alertify.min.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-    <title>Group Reservations</title>
+    <title>School Reservations</title>
 </head>
 
 <body>
-       <header>
+    <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 fixed-top">
             <a href="../index.html" class="navbar-brand"><img src="../images/homePage/ctgLogo.jpg" width="120px" height="30px"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,15 +27,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="tripInformation.html">Trip Information</a></li>
                     <li class="nav-item"><a class="nav-link" href="boats_info.html">Our Boats</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reserve</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="reservation.html">Personal</a>
-                            <a class="dropdown-item  active" href="reservation_group.html">Corporation</a>
-                            <a class="dropdown-item" href="reservation_school.html">School</a>
+                            <a class="dropdown-item" href="reservation_group.html">Corporation</a>
+                            <a class="dropdown-item active" href="reservation_school.html">School</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -45,15 +47,48 @@
                         </div>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+
                 </ul>
             </div>
         </nav>
     </header>
     <div class="header">
-        <h1>Group Reservation</h1>
-        <p>Please submit this form if you are a large group or a corporation, we will respond within 24 hours to follow up with you reservation request.</p>
+        <h1>School Reservation</h1>
+        <p>If your school board is listed below, please click the name of your board, fill out the certificate.
+            <br>Additionally have each person/student taking the trip fill out the Individual Waiver Form.</p>
     </div>
     <br>
+
+
+    <h3>School Waiver Forms</h3>
+    <div class="grid-6-col">
+        <div class="pdf"><a href="http://getonthegrand.com/images/schoolGroupInformation/certificateHalton.pdf"><i class="fas fa-file-alt"></i><br>
+            <p>Halton District<br> School Board</p></a>
+        </div>
+        <div class="pdf"><a href="http://getonthegrand.com/images/schoolGroupInformation/certificateUpperGrand.pdf"><i class="fas fa-file-alt"></i><br>
+            <p>Upper Grand District <br>School Board</p></a>
+        </div>
+        <div class="pdf"><a href="http://getonthegrand.com/images/schoolGroupInformation/certificateWaterlooDistrict.pdf"><i class="fas fa-file-alt"></i><br>
+            <p>Waterloo Region District<br> School Board</p></a>
+        </div>
+        <div class="pdf"><a href="http://getonthegrand.com/images/schoolGroupInformation/certificate-WaterlooCatholic.pdf"><i class="fas fa-file-alt"></i><br>
+            <p>Waterloo Catholic District <br> School Board</p></a>
+        </div>
+
+        <div class="pdf"><a href="http://getonthegrand.com/images/schoolGroupInformation/certificateWellingtonCatholic.pdf"><i class="fas fa-file-alt"></i><br>
+            <p>Wellington Catholic District<br> School Board</p></a>
+        </div>
+        <div class="pdf" id="waiver"><a href="http://getonthegrand.com/images/schoolGroupInformation/waiverSchool.pdf"><i class="fas fa-file-alt"></i><br>
+            <p>Individual Waiver Form</p></a>
+        </div>
+    </div>
+
+    <div class="text">
+        <p>We kindly ask that you complete out reservation form regarding your trip, let us know when, and approximately how many students and staff will be attending and we will get back to you within 24hrs!</p>
+    </div>
+    <br>
+    <br>
+
     <div class="reservationFields">
         <div class="header1">
             <h2>Please fill in the following fields</h2>
@@ -98,7 +133,7 @@
 
                         Is this your first trip with us?<br>
                         <input type="radio" name="firsttrip" value="yes" checked> Yes<br>
-                        <input type="radio" name="firsttrip" value="no"> No<br><br>
+                        <input type="radio" name="firsttrip" value="no"> No<br>
 
                         Does your group require a guide on your trip?<br>
                         <input type="radio" name="guide" value="yes" checked> Yes<br>
@@ -115,7 +150,7 @@
 
 
 
-                      
+                   
                     </form>
                 </div>
 
@@ -181,9 +216,11 @@
                             <option value="nineam">9:00 AM</option>
                             <option value="tenam">10:00 AM</option>
                             <option value="elevenam">11:00 AM</option>
+
                             <option value="elevenam">12:00 PM</option>
                             <option value="elevenam">1:00 PM</option>
                             <option value="elevenam">2:00 PM</option>
+
                         </select>
 
                         to
@@ -193,9 +230,11 @@
                             <option value="nineam">9:00 AM</option>
                             <option value="tenam">10:00 AM</option>
                             <option value="elevenam">11:00 AM</option>
+
                             <option value="elevenam">12:00 PM</option>
                             <option value="elevenam">1:00 PM</option>
                             <option value="elevenam">2:00 PM</option>
+
                         </select>
                     </div>
                     <br>
@@ -204,19 +243,23 @@
                         online system only allows for bookings in advance
                         !</p>
                 </div>
+
+
+
+
                 <div class="cell5">
                     Question, Comments, or Concerns?
                     <textarea rows="4" cols="50" name="comment" form="usrform" placeholder="Question, Comments, or Concerns..."> </textarea>
                 </div>
                 <div class="cell6">
                     <input type="submit" value="Submit">
-                    <a href="reservation_group.html">Reset Fields</a>
+
+                    <a href="reservation_school.html">Reset Fields</a>
+
                 </div>
             </div>
-
         </div>
     </div>
-
 
 
 
@@ -236,18 +279,24 @@
             <a href="https://www.instagram.com/canoethegrand/"><i class="fab fa-instagram"></i>Check out our instagram!</a>
             <br>
             <div class="item5">
-                <a href="login.html"><i class="fas fa-sign-out-alt"></i>Employee Log In</a>
+
+               <a href="login.html"><i class="fas fa-sign-out-alt"></i>Employee Log In</a>
+
+
+                
+
             </div>
             <div class="bottomSpace"></div>
         </div>
     </div>
 
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.js"></script>
 </body>
 <script>
     'undefined' === typeof _trfq || (window._trfq = []);
@@ -259,4 +308,6 @@
         'server': 'a2plcpnl0893'
     }) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.
 </script>
-<script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script></html>
+<script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script>
+
+</html>
