@@ -1,6 +1,10 @@
 
 
+*{ font-family: 'Open Sans', sans-serif;
+}
 /*footer css start */
+
+
 
 .footer {
     display: grid;
@@ -75,20 +79,12 @@
     height: 50px;
 }
 
-/*footer css end */
-
-
 
 
 /* Phone Sized Screen */
 @media only screen and (max-width: 480px) {
     
    
-     /*footer css */
-    .item4 {
-        grid-column: 1;
-        grid-row: 4;
-    }
 }
         
 
@@ -97,22 +93,28 @@
 /* Tablet Sized Screen */
 @media only screen and (max-width: 1024px) {
 
-/*footer css */
+    
+
     .item4 {
         grid-column: 1;
         grid-row: 4;
-        margin: 50px 20% 0 20%;
+        margin: 50px 5% 0 5%;
+        
     }
     
 .item1 {
-    margin: 50px 0 0 20%;
+    margin: 50px 0 10px 5%;
+    padding: 0;
+    width: auto;
 }
 
 .item2 {
-    margin: 0 0 0 20%;
+    margin: 0 0 10px 5%;
+    width: auto;
 }
 
 .item3 {
-    margin: 0 0 0 20%;
+    margin: 0 0 0 5%;
+    width: auto;
 }
 }
