@@ -5,27 +5,75 @@
     text-align: left;
     outline: none;
     margin: 0 0 10px 0;
-
+    padding: 10px;
+    height: auto;
 }
 
-.activeCurr{
-    margin: 0;
-    
-}
-.activeCurr .cell{
-    
-}
-.activeCurr h5, .activeCurr h6{
-    
-}
-.activeCurr .tripTab:hover .tripBasicInfo{
-    padding-top: 0;
-}
+
 .panel {
     padding: 10px 18px;
     display: none;
     margin: 0 0 10px 0;
     overflow: hidden;
-    height: 500px;
-    background: rgb(220,220,220);
+}
+
+.question {
+    background: #212529;
+    color: rgba(255, 255, 255, .5);
+    border: #212529 solid 1px;
+    border-radius: 15px;
+}
+
+.question h5 {
+    margin: 0;
+    padding: 1px 10px;
+}
+
+.answer {
+    display: none;
+    overflow: hidden;
+    margin: 0 0 10px 0;
+    padding: 10px 18px;
+    height: auto;
+    color: #212529;
+    background: rgb(220, 220, 220);
+    border-radius: 0 0 15px 15px;
+}
+
+.tripTab {
+    margin: 10px 0 0 0;
+    padding: 0 15%;
+    height: 300px;
+    display: grid;
+    color: #fff;
+}
+
+.tripTab:hover .tripBasicInfo {
+    padding-top: 10px;
+}
+
+.description {
+    padding: 10px 18px;
+    display: none;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+    background: rgb(220, 220, 220);
+}
+
+.activeCurrQ {
+    margin: 0;
+    border-radius: 15px 15px 0 0;
+    color: #fff;
+}
+
+
+.activeCurr .cell {}
+
+.activeCurr h5,
+.activeCurr h6 {}
+
+
+
+.activeCurr .tripTab:hover .tripBasicInfo {
+    padding-top: 0;
 }
