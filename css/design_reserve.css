@@ -6,9 +6,11 @@ body {
     font-size: 14pt;
 }
 
-body h1, h2, h3 {
+body h1,
+h2,
+h3 {
     text-transform: uppercase;
-   
+
 }
 
 .header {
@@ -19,7 +21,7 @@ body h1, h2, h3 {
     height: auto;
     margin: 0 10%;
     padding: 0;
-    
+
 }
 
 
@@ -27,8 +29,8 @@ body h1, h2, h3 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
-   
-   
+
+
 
 }
 
@@ -258,7 +260,7 @@ body {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     margin: 0 10% 50px;
-  
+
 
 }
 
@@ -269,7 +271,7 @@ body {
 }
 
 .grid-6-col div p {
-    font-size: 10px;
+    font-size: 14px;
     line-height: 1.5;
 }
 
@@ -288,15 +290,34 @@ h3 {
 }
 
 .text {
-    margin: 0 10%;
+    margin: 20px 10%;
 }
 
+#waiver {
+    border-left-style: solid;
+    border-width: 1px;
+    border-color: #8d8680;
 
-
+}
 
 
 /* Tablet Sized Screen */
 @media only screen and (max-width: 1024px) {
+
+
+    .header {
+        margin: 20% 5% 50px;
+    }
+
+    .header h1 {
+        text-align: center;
+
+    }
+
+    .reservationFields {
+        margin: 5%;
+        line-height: 40px;
+    }
 
     .grid-4-col {
         grid-template-columns: 1fr;
@@ -308,57 +329,47 @@ h3 {
         margin: 20px;
     }
 
-    
-    .reservationFields {
-        line-height: 40px;
-       
-    }
-    
-    .header h1 {
-        line-height: 40px;
-    }
-    
     .cell6 {
-    margin-left: 20px;
-}
-    .grid-6-col {
-        grid-template-columns:repeat(2, 1fr); 
+        margin-left: 20px;
     }
-    
+
+    .grid-6-col {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+   
 
 }
 
 /* Phone Sized Screen */
 @media only screen and (max-width: 480px) {
-    
-   .reservationFields {
+
+
+    .cell2 {
         margin: 0;
     }
-    .cell2 {
-    margin: 0;
-}
+
     .cell3 {
         margin: 0;
     }
+
     .cell4 {
         margin: 0;
     }
+
     .cell5 {
         margin: 0;
     }
+
     .cell6 {
-    margin-left: 0;
+        margin-left: 0;
         margin-top: 20px;
     }
+
     .grid-6-col {
-        margin: 0; 
+        margin: 0;
     }
-    .header {
-    margin: 20% 10% 70px;
-    }
-    .reservationFields {
-    text-align: center;
-    }
-    
+
+
+
 }
-        
