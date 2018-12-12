@@ -39,12 +39,12 @@ h5 {
 
 .grid-2-col {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 60% 1fr;
     grid-gap: 5px;
     margin: 0;
     padding: 5px 0;
     height: auto;
-
+    width: 100%;
 }
 
 .grid-3-col {
@@ -65,12 +65,11 @@ h5 {
 }
 
 .grid-2-col .cell {
-    background: rgb(220, 220, 220);
+    border: 1px #3a4147 solid;
     padding: 15px;
 }
 
 .times {
-
     grid-row-end: span 2;
 }
 
