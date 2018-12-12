@@ -1,4 +1,11 @@
 
+
+*{ font-family: 'Open Sans', sans-serif;
+}
+/*footer css start */
+
+
+
 .footer {
     display: grid;
     grid-template-columns: 4fr;
